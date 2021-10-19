@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "css/bootstrap-grid.css";
+ @import "css/bootstrap.rtl.css";
+ @import "css/bootstrap.css";
+ @import "css/bootstrap-grid.rtl.css";
+ @import "css/bootstrap-reboot.css";
+ @import "css/bootstrap-reboot.rtl.css";
+ @import "css/bootstrap-utilities.css";
+ @import "css/bootstrap-utilities.rtl.css";
+
+
+ h1{
+     font-family: "Pacifico", cursive;
+     color: darkblue;
+     font-size: 60px;
+     margin-top: 5px;
+     margin-left: 20px;
+     padding-left: 20px;
+ }
+
+ .navbar ul {
+     list-style-type: none;
+     margin-top: 20px;
+     margin-right: 10px;
+     padding: 0;
+     overflow: hidden;
+     background-color: lightblue;
+ }
+ .navbar li {
+     float: right;
+     font-size: 20px;
+     font-family: 'Nunito', sans-serif;
+     border-left: 1px solid mediumpurple;
+ }
+ .navbar li:last-child {
+     border-left: none;
+ }
+ .navbar li a {
+     display: block;
+     color: rebeccapurple;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+ }
+ .navbar {
+     display: block;
+     padding: 8px;
+     float: right;
+     color: rebeccapurple;
+ }
+ .navbar li a:hover {
+     background-color: mediumpurple;
+ }
+ .dream-log {
+     text-align: center;
+     padding-left: 20px;
+ }
+ form {
+     display: inline-block;
+ }
+ th{
+     font-family: 'Nunito', sans-serif;
+     color: rebeccapurple;
+     font-size: 30px;
+ }
+ table{
+     padding: 10px;
+ }
