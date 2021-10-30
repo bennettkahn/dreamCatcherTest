@@ -53,5 +53,5 @@ end
 
 group :production do
   gem 'pg', '~> 1.1'
-  gem 'bigdecimal', '1.3.5'
+  #gem 'bigdecimal', '1.3.5'
 end
