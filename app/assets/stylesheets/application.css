@@ -13,24 +13,16 @@
  *= require_tree .
  *= require_self
  */
- @import "css/bootstrap-grid.css";
- @import "css/bootstrap.rtl.css";
- @import "css/bootstrap.css";
- @import "css/bootstrap-grid.rtl.css";
- @import "css/bootstrap-reboot.css";
- @import "css/bootstrap-reboot.rtl.css";
- @import "css/bootstrap-utilities.css";
- @import "css/bootstrap-utilities.rtl.css";
 
 
- h1{
-     font-family: "Pacifico", cursive;
-     color: darkblue;
-     font-size: 60px;
-     margin-top: 5px;
-     margin-left: 20px;
-     padding-left: 20px;
- }
+.entries{
+    font-family: "Pacifico", cursive;
+    color: darkblue;
+    font-size: 60px;
+    margin-top: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
 
  .navbar ul {
      list-style-type: none;
@@ -80,3 +72,11 @@
  table{
      padding: 10px;
  }
+.text-truncate{
+    display: inline-block;
+}
+.add-button {
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+}
