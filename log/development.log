@@ -3745,3 +3745,114 @@ Processing by EntriesController#index as HTML
 Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 5363)
 
 
+  [1m[35m (3.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateKeywords (20211102022320)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "keywords" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "text_id" integer, "text" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (10.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102022320"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for 127.0.0.1 at 2021-11-01 21:28:45 -0500
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 6100)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/garrettgilliom/Desktop/CS/School-Projects/Studio/dreamCatcherTest/public/packs
+[Webpacker] Hash: e2f281de3ea1fdc4fa5a
+Version: webpack 4.46.0
+Time: 3460ms
+Built at: 11/01/2021 9:28:53 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-be412d64645010827f4e.js    125 KiB  application  [emitted] [immutable]  application
+js/application-be412d64645010827f4e.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-be412d64645010827f4e.js js/application-be412d64645010827f4e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 244)
+  Rendered layout layouts/application.html.erb (Duration: 7127.5ms | Allocations: 34641)
+Completed 200 OK in 7182ms (Views: 7141.5ms | ActiveRecord: 2.2ms | Allocations: 42661)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-01 21:29:03 -0500
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4287)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 5636)
+
+
+Started GET "/stylez.css" for 127.0.0.1 at 2021-11-01 21:29:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/stylez.css"):
+  
+Started GET "/website-background.png" for 127.0.0.1 at 2021-11-01 21:29:04 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/website-background.png"):
+  
+Started GET "/keyboards" for 127.0.0.1 at 2021-11-01 21:29:09 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/keyboards"):
+  
+Started GET "/keywords" for 127.0.0.1 at 2021-11-01 21:29:13 -0500
+Processing by KeywordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering keywords/index.html.erb within layouts/application
+  [1m[36mKeyword Load (6.4ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords"[0m
+  ↳ app/views/keywords/index.html.erb:15
+  Rendered keywords/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 991)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 4978)
+Completed 200 OK in 73ms (Views: 57.7ms | ActiveRecord: 6.4ms | Allocations: 6677)
+
+
+Started GET "/" for 127.0.0.1 at 2021-11-02 00:00:00 -0500
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 373)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 89.9ms | Allocations: 326)
+  Rendered layout layouts/application.html.erb (Duration: 293.6ms | Allocations: 8714)
+Completed 200 OK in 466ms (Views: 306.8ms | ActiveRecord: 0.0ms | Allocations: 12497)
+
+
+Started GET "/stylez.css" for 127.0.0.1 at 2021-11-02 00:00:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/stylez.css"):
+  
+Started GET "/website-background.png" for 127.0.0.1 at 2021-11-02 00:00:02 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/website-background.png"):
+  
+Started GET "/keywords" for 127.0.0.1 at 2021-11-02 00:00:09 -0500
+Processing by KeywordsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering keywords/index.html.erb within layouts/application
+  [1m[36mKeyword Load (0.8ms)[0m  [1m[34mSELECT "keywords".* FROM "keywords"[0m
+  ↳ app/views/keywords/index.html.erb:15
+  Rendered keywords/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1055)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 5082)
+Completed 200 OK in 26ms (Views: 19.6ms | ActiveRecord: 0.8ms | Allocations: 7010)
+
+

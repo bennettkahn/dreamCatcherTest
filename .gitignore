@@ -11,6 +11,9 @@ capybara-*.html
 rerun.txt
 pickle-email-*.html
 
+# Ignore scaffolds.scss
+/app/assets/stylesheets/scaffolds.scss
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
