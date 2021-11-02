@@ -21,10 +21,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<p id="notice"><%= notice %></p>
 
+<p id="notice"><%= notice %></p>
 <h1 class="entries">My Entries</h1>
-<table>
+<table class="table">
   <thead>
     <tr>
       <th style="width: 30%">Title</th>
@@ -38,7 +38,7 @@
       <tr>
         <td><%= entry.title %></td>
         <td><span class="d-inline-block text-truncate" style="max-width: 300px;"><%= entry.description %></span></td>
-        <td><%= entry.time %></td>
+        <td><%= entry.time.to_formatted_s(:long) %></td>
         <td style="padding-right:15px"><%= link_to entry  do %>
             <%=image_tag "eye.png" %>
             <% end %></td>
