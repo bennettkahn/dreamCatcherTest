@@ -1,3 +1,5 @@
+<!-- I need to make it so that users are only created by signing up, so this form kind of blows... -->
+
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
@@ -19,11 +21,6 @@
   <div class="field">
     <%= form.label :last_name %>
     <%= form.text_field :last_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
   </div>
 
   <div class="field">
