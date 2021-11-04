@@ -10781,3 +10781,71 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 24ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 4561)
 
 
+Started GET "/" for 127.0.0.1 at 2021-11-04 09:46:38 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 444)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.8ms | Allocations: 791)
+  Rendered layout layouts/application.html.erb (Duration: 44.7ms | Allocations: 12213)
+Completed 200 OK in 72ms (Views: 62.3ms | ActiveRecord: 0.0ms | Allocations: 16885)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-11-04 09:46:43 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.3ms | Allocations: 681)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 5376)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 9434)
+Completed 200 OK in 32ms (Views: 20.8ms | ActiveRecord: 0.5ms | Allocations: 17216)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-11-04 09:46:44 -0500
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:14
+  Rendered users/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 5809)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms | Allocations: 7269)
+
+
+Started GET "/application.css" for 127.0.0.1 at 2021-11-04 09:46:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/application.css"):
+  
+Started GET "/entries" for 127.0.0.1 at 2021-11-04 09:46:44 -0500
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:14
+  Rendered entries/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 4238)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 8355)
+Completed 200 OK in 18ms (Views: 14.4ms | ActiveRecord: 0.6ms | Allocations: 10642)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-11-04 09:46:45 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 157)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2026)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6084)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 7641)
+
+
