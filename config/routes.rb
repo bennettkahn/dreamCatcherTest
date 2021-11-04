@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :keywords
   resources :users
   resources :entries
   root 'home#index'
