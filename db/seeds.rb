@@ -204,7 +204,7 @@ Entry.create!([{
 {
   title: "Mamma Mia, but scary",
   description: "I love the movie Mamma Mia, but when my friends and I watched it for Halloween it got...spooky. No more happy ending, that\'s for sure.",
-  keyword: "Mamma Mia",
+  keyword: "mamma mia",
   user_id: 5,
   time: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
   created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
@@ -347,3 +347,128 @@ Entry.create!([{
 }])
 
 p "Created #{Entry.count} entries"
+
+Keyword.destroy_all
+
+Keyword.create!([{
+  text_id: 1,
+  text: "lava",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 2,
+  text: "bats",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 3,
+  text: "furniture",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 4,
+  text: "dolphins",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 5,
+  text: "mamma mia",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 6,
+  text: "technology",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 7,
+  text: "falling",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 8,
+  text: "snow",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 9,
+  text: "dinosaur",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 10,
+  text: "flappy bird",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 11,
+  text: "computer",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 12,
+  text: "middle school",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 13,
+  text: "commute",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 14,
+  text: "apocalypse",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 15,
+  text: "composition",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 16,
+  text: "embarrassment",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 17,
+  text: "backpacks",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 18,
+  text: "pokemon",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 19,
+  text: "smash",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+},
+{
+  text_id: 20,
+  text: "flight",
+  created_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+  updated_at: DateTime.strptime("11/04/2021 09:00", "%m/%d/%Y %H:%M"),
+}])
+
+p "Created #{Keyword.count} keywords"
