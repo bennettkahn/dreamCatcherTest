@@ -13,3 +13,61 @@
  *= require_tree .
  *= require_self
  */
+
+/* Kelly's preferred label font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Jake's prefered label fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap');
+
+/* Font for headers/titles */
+ .label-font {
+   font-family: "Indie Flower";
+   font-weight: bold;
+ }
+
+ .table-font {
+   font-family: "Indie Flower";
+   font-size: 125%;
+ }
+
+ /* Paragraph/blurb/description formatting */
+ .description {
+   text-align: center;
+   margin-top: 50px;
+   font-family: "Indie Flower";
+   background-color: rgba(255, 255, 255, 0.8);
+   line-height: 1.75;
+   font-size: 24px;
+   padding: 16px 16px 16px 16px;
+
+ }
+
+/*NOTE: WE Need to fix how the image resizes when we shrink the window */
+ .background-image {
+   opacity: 0.5;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: -1;
+ }
+
+ /* Animation for about-description */
+#about-animation {
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
