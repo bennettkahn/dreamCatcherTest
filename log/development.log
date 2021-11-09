@@ -3881,3 +3881,61 @@ Migrating to AddUserToEntries (20211104151040)
   [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-11-09 11:34:59 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 373)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 326)
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 8361)
+Completed 200 OK in 120ms (Views: 104.0ms | ActiveRecord: 0.0ms | Allocations: 12366)
+
+
+Started GET "/stylez.css" for 127.0.0.1 at 2021-11-09 11:35:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/stylez.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-grid.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.rtl.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-reboot.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-reboot.rtl.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-utilities.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-utilities.rtl.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-grid.rtl.css"):
+  
+Started GET "/stylez.css" for 127.0.0.1 at 2021-11-09 11:35:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/stylez.css"):
+  
+Started GET "/website-background.png" for 127.0.0.1 at 2021-11-09 11:35:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/website-background.png"):
+  
+Started GET "/keywords" for 127.0.0.1 at 2021-11-09 11:35:04 -0600
+Processing by KeywordsController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2700)
+
+
+  
+NameError (uninitialized constant KeywordsController::Keyword):
+  
+app/controllers/keywords_controller.rb:6:in `index'
