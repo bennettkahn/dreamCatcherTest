@@ -19,7 +19,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
 
     <!-- Added background image in HTML too instead of just CSS because we needed to change its opacity -->
     <img class="background-image" src="https://exoplanets.nasa.gov/internal_resources/2069" alt="Purple background image">
@@ -33,7 +33,9 @@
       <% end %>
 
         <%= yield %>
+        
     </div>
+    <%= render 'home/footer' %>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
