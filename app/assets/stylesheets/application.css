@@ -41,8 +41,14 @@
    line-height: 1.75;
    font-size: 24px;
    padding: 16px 16px 16px 16px;
-
  }
+
+ /* Overflow control for about description */
+ .about-spill{
+     height: 400px;
+     overflow: auto;
+ }
+
 
 /*NOTE: WE Need to fix how the image resizes when we shrink the window */
  .background-image {
@@ -55,7 +61,7 @@
    z-index: -1;
  }
 
- /* Animation for about-description */
+ /* Animation for about description */
 #about-animation {
   animation-name: fade-in;
   animation-duration: 5s;
