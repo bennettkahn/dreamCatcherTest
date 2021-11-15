@@ -59,6 +59,9 @@
    left: 0;
    top: 0;
    z-index: -1;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: fixed;
  }
 
  /* Animation for about description */
@@ -76,4 +79,9 @@
   100% {
     opacity: 1;
   }
+}
+
+/* Keeps footer fixed at bottom without needing to scroll all the way down */
+#footer {
+  
 }
