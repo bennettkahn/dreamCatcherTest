@@ -10,4 +10,14 @@
 </p>
 
 <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %> |
-<%= link_to 'Back', entries_path, class:"btn btn-secondary" %>
+
+<% if user_signed_in? %>
+
+  <!-- should link back to explore if coming from explore -->
+  <%= link_to 'Back', entries_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+  <%= link_to 'Back', home_explore_path, class:"btn btn-secondary" %>
+
+<% end %>

@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
          has_many :entries 
+         
   def self.id_to_name id
     user = User.where(id: id)
     if user.length() == 0
