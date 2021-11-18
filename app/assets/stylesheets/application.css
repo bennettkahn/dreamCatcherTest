@@ -28,18 +28,18 @@
  }
 
  .table-font {
-   font-family: "Indie Flower";
+   font-family: "Verdana";
    font-size: 125%;
  }
 
  /* Paragraph/blurb/description formatting */
  .description {
    text-align: center;
-   margin-top: 50px;
-   font-family: "Indie Flower";
+   margin-top: 20px;
+   font-family: "Verdana";
    background-color: rgba(255, 255, 255, 0.8);
    line-height: 1.75;
-   font-size: 24px;
+   font-size: 20px;
    padding: 16px 16px 16px 16px;
  }
 

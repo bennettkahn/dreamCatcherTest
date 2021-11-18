@@ -1,13 +1,14 @@
+<div class="description rounded" style="font-size: 16px !important; margin-bottom: 20px; text-align: left !important;">
+  <p>
+    <strong>Title:</strong>
+    <%= @entry.title %>
+  </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @entry.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @entry.description %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @entry.description %>
+  </p>
+</div>
 
 <% if @entry.user == current_user %>
   <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %> |
