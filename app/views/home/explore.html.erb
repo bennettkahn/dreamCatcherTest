@@ -18,7 +18,7 @@
         <td><%= entry.title %></td>
         <td><%= entry.description %></td>
         <td><%= entry.created_at.strftime("%d %b %y") %></td>
-        <td><%= entry.get_name %></td>
+        <td><%= entry.get_name.split(/@/, 2).first %></td>
         <td><%= link_to image_tag('eye.png'), entry %></td>
       </tr>
     <% end %>
