@@ -16,9 +16,9 @@
     <% @entries.each do |entry| %>
       <% if entry.user != current_user %>
         <tr>
-          <td><%= entry.title %></td>
+          <td style="width: 20%"><%= entry.title %></td>
           <td><%= entry.description %></td>
-          <td><%= entry.created_at.strftime("%d %b %y") %></td>
+          <td style = "width: 10%"><%= entry.created_at.strftime("%d %b %y") %></td>
           <% if user_signed_in? %>
             <td><%= entry.get_name.split(/@/, 2).first %></td>
           <% else %>
