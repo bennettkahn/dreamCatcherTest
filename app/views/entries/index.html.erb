@@ -14,15 +14,15 @@
   <tbody">
     <% @entries.each do |entry| %>
       <% if entry.user == current_user %>
-      <tr>
-        <td><%= entry.title %></td>
-        <td><%= entry.description %></td>
-        <td><%= entry.created_at.strftime("%d %b %y") %></td>
+        <tr>
+          <td><%= entry.title %></td>
+          <td><%= entry.description %></td>
+          <td><%= entry.created_at.strftime("%d %b %y") %></td>
 
-        <td><%= link_to image_tag('eye.png'), entry %></td>
-        <td><%= link_to image_tag('edit.png'), edit_entry_path(entry) %></td>
-        <td><%= link_to image_tag('trashcan.png'), entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+          <td><%= link_to image_tag('eye.png'), entry %></td>
+          <td><%= link_to image_tag('edit.png'), edit_entry_path(entry) %></td>
+          <td><%= link_to image_tag('trashcan.png'), entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
       <% end %>
     <% end %>
   </tbody>

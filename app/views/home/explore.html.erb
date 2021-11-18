@@ -6,21 +6,27 @@
     <tr>
       <th>Title</th>
       <th>Description</th>
-      <th>Created at...</th>
-      <th>Author</th>
+      <th>Date</th>
+      <th>By...</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @entries.each do |entry| %>
-      <tr>
-        <td><%= entry.title %></td>
-        <td><%= entry.description %></td>
-        <td><%= entry.created_at.strftime("%d %b %y") %></td>
-        <td><%= entry.get_name.split(/@/, 2).first %></td>
-        <td><%= link_to image_tag('eye.png'), entry %></td>
-      </tr>
+      <% if entry.user != current_user %>
+        <tr>
+          <td><%= entry.title %></td>
+          <td><%= entry.description %></td>
+          <td><%= entry.created_at.strftime("%d %b %y") %></td>
+          <% if user_signed_in? %>
+            <td><%= entry.get_name.split(/@/, 2).first %></td>
+          <% else %>
+            <td>Anonymous</td>
+          <% end %>
+          <td><%= link_to image_tag('eye.png'), entry %></td>
+        </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>

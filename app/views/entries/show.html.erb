@@ -9,13 +9,24 @@
   <%= @entry.description %>
 </p>
 
-<%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %> |
+<% if @entry.user == current_user %>
+  <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %> |
+<% end %>
 
+<!-- PUT LOGIC IN CONTROLLER OR SOMETHING -->
+<!-- single button line that grabs the correct pathing, if possible -->
+<!-- pass in @entry.user and current_user as arguments -->
 <% if user_signed_in? %>
+  <% if @entry.user == current_user %>
 
-  <!-- should link back to explore if coming from explore -->
-  <%= link_to 'Back', entries_path, class:"btn btn-secondary" %>
+    <!-- should link back to explore if coming from explore -->
+    <%= link_to 'Back', entries_path, class:"btn btn-secondary" %>
 
+  <% else %>
+
+    <%= link_to 'Back', home_explore_path, class:"btn btn-secondary" %>
+
+  <% end %>
 <% else %>
 
   <%= link_to 'Back', home_explore_path, class:"btn btn-secondary" %>

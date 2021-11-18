@@ -45,7 +45,7 @@
 
  /* Overflow control for about description */
  .about-spill{
-     height: 400px;
+     /*height: 400px;*/
      overflow: auto;
  }
 
