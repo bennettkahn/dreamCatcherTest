@@ -33,11 +33,9 @@ class EntriesController < ApplicationController
 
     respond_to do |format|
       if @entry.save
-        format.html { redirect_to @entry, notice: "Entry was successfully created." }
-        format.json { render :show, status: :created, location: @entry }
+          redirect_to @entry, notice: "Entry was successfully created."  
       else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @entry.errors, status: :unprocessable_entity }
+         render :new, status: :unprocessable_entity  
       end
     end
   end
@@ -78,6 +76,6 @@ class EntriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def entry_params
-      params.require(:entry).permit(:title, :description, :user_id)
+      params.require(:entry).permit(:title, :description, :user_id, :test)
     end
 end

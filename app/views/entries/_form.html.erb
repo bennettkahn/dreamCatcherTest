@@ -27,6 +27,13 @@
     <%= form.number_field :user_id, id: :entry_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
 
+  <div class="field form-group">
+    <%= form.label :test %>
+    <%= form.text_area :test, class:"form-control", placeholder: "Test"%>
+  </div>
+
+  <!-- use radiobutton no checkbox -->
+
   <br>
 
   <div class="actions form-group">
