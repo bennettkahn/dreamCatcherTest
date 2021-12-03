@@ -1,6 +1,15 @@
 <br>
 
-<h1 class="label-font" style="text-align: center;">Welcome to Dreamcatcher!</h1>
+<% if user_signed_in? %>
+  <h1 class="label-font" style="text-align: center;">
+    Welcome to Dreamcatcher, <%= current_user.first_name %>!
+  </h1>
+<% else %>
+  <h1 class="label-font" style="text-align: center;">
+    Welcome to Dreamcatcher!
+  </h1>
+<% end %>
+
 <div class = "blockquote about-spill" id="about-animation">
     <div class = "description rounded">
       <p>
