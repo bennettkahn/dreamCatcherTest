@@ -150,7 +150,7 @@ h1 {
 <div class="album text-muted">
    <div class="container-fluid contenedor text-center">
       <div class="row row-cols-5">
-          <%= i = 0 %>
+          <% i = 0 %>
          <% @entries.each do |entry| %>
            <% if entry.user != current_user %>
 
@@ -163,12 +163,12 @@ h1 {
                     <h4><%= entry.description[0, 100]%></h4>
                  </article>
 
-                <%= path = "../../assets/cards" + (i % 3).to_s %>
+                <% path = "../../assets/cards" + (i % 3).to_s %>
                  <img src='<%= path %>' alt="">
               </div>
 
             <% end %>
-            <%= i += 1 %>
+            <% i += 1 %>
          <% end %>
       </div>
 
