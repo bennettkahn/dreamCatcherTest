@@ -159,7 +159,9 @@ h1 {
                     <span  class="lnr lnr-eye">  view <%= link_to image_tag('eye.png', alt: "View Entry"), entry %>  </span>
                  </div>
                  <article class="text-left">
-                    <h2><%= entry.title %> <br> <strong> <%= entry.get_name %> - <%= entry.created_at.strftime("%d %b %y") %></strong></h2>
+                    <h2>
+                      <%= entry.title %> <br> <strong> <%= user_signed_in? ? entry.get_name : "" %> - <%= entry.created_at.strftime("%d %b %y") %></strong>
+                    </h2>
                     <h4><%= entry.description[0, 100]%></h4>
                  </article>
 
