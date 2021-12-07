@@ -33,9 +33,11 @@ class EntriesController < ApplicationController
 
     respond_to do |format|
       if @entry.save
-          redirect_to @entry, notice: "Entry was successfully created."  
+        format.html { redirect_to @entry, notice: "Dream was successfully created." }
+        format.json { render :show, status: :created, location: @entry }
       else
-         render :new, status: :unprocessable_entity  
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @entry.errors, status: :unprocessable_entity } 
       end
     end
   end
@@ -44,7 +46,7 @@ class EntriesController < ApplicationController
   def update
     respond_to do |format|
       if @entry.update(entry_params)
-        format.html { redirect_to @entry, notice: "Entry was successfully updated." }
+        format.html { redirect_to @entry, notice: "Dream was successfully updated." }
         format.json { render :show, status: :ok, location: @entry }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -57,7 +59,7 @@ class EntriesController < ApplicationController
   def destroy
     @entry.destroy
     respond_to do |format|
-      format.html { redirect_to entries_url, notice: "Entry was successfully destroyed." }
+      format.html { redirect_to entries_url, notice: "Dream was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -76,6 +78,6 @@ class EntriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def entry_params
-      params.require(:entry).permit(:title, :description, :user_id, :test)
+      params.require(:entry).permit(:title, :description, :user_id, :is_anon, :is_private)
     end
 end

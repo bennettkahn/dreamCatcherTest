@@ -16,13 +16,17 @@
 
   <tbody>
     <% @entries.each do |entry| %>
-      <% if entry.user != current_user %>
+      <% if entry.user != current_user and entry.is_private == false %>
         <tr>
           <td style="width: 20%"><%= entry.title %></td>
           <td><%= entry.description %></td>
           <td style = "width: 10%"><%= entry.created_at.strftime("%d %b %y") %></td>
           <% if user_signed_in? %>
-            <td><%= entry.get_name.split(/@/, 2).first %></td>
+            <% if entry.is_anon == false %>
+              <td><%= entry.get_name.split(/@/, 2).first %></td>
+            <% else %>
+              <td>Anonymous</td>
+            <% end %>
           <% end %>
           <td><%= link_to image_tag('eye.png'), entry %></td>
         </tr>

@@ -27,12 +27,23 @@
     <%= form.number_field :user_id, id: :entry_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
 
-  <div class="field form-group">
-    <%= form.label :test %>
-    <%= form.text_area :test, class:"form-control", placeholder: "Test"%>
-  </div>
+  <br>
 
   <!-- use radiobutton no checkbox -->
+
+  <div class="field form-group">
+    <%= form.label :is_private, "Private", :value => true  %>
+    <%= form.radio_button :is_private, true %> |
+    <%= form.label :is_private, "Public", :value => false %>
+    <%= form.radio_button :is_private, false %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :is_anon, "Anonymous", :value => true  %>
+    <%= form.radio_button :is_anon, true %> |
+    <%= form.label :is_anon, "Named", :value => false %>
+    <%= form.radio_button :is_anon, false %>
+  </div>
 
   <br>
 
