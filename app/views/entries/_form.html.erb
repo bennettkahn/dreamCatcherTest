@@ -37,6 +37,9 @@
   <br>
 
   <div class="actions form-group">
+    <% if request.path != "/entries/new" %>
+      <%= link_to 'Back', entries_path, class:"btn btn-secondary" %> |
+    <% end %>
     <%= form.submit class:"btn btn-secondary"%>
   </div>
 <% end %>
