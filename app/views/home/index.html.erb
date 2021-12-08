@@ -55,9 +55,12 @@ preloadImages("../../assets/images/dream0.jpeg", "../../assets/images/dream1.jpe
 }
 
 .carousel-item img {
-    width: 600px;
-    height: 600px;
+  width: 600px;
+  height: 600px;
+}
 
+.carousel-fix {
+  z-index: -4;
 }
 
 </style>
@@ -72,10 +75,12 @@ preloadImages("../../assets/images/dream0.jpeg", "../../assets/images/dream1.jpe
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style="padding-top: 50px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    <ol class="carousel-indicators carousel-fix">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel-fix"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active carousel-fix"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active carousel-fix"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active carousel-fix"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active carousel-fix"></li>
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active" data-interval="2000">
