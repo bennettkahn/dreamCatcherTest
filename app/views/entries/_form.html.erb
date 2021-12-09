@@ -1,6 +1,6 @@
 <%= form_with(model: entry) do |form| %>
   <% if entry.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="form-group">
       <h2><%= pluralize(entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
 
       <ul>
@@ -11,22 +11,46 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, class:"form-control", placeholder: "Title" %>
   </div>
 
-  <div class="field">
+  <br>
+
+  <div class="field form-group">
     <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.text_area :description, class:"form-control", placeholder: "Description"%>
   </div>
 
-  <div class="field">
-    <%= form.label :time %>
-    <%= form.datetime_select :time %>
+  <div class="field form-group">
+    <%= form.number_field :user_id, id: :entry_user_id, class:"form-control", value: current_user.id, type: :hidden %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <br>
+
+  <!-- use radiobutton no checkbox -->
+
+  <div class="field form-group">
+    <%= form.label :is_private, "Private", :value => true  %>
+    <%= form.radio_button :is_private, true %> |
+    <%= form.label :is_private, "Public", :value => false %>
+    <%= form.radio_button :is_private, false %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :is_anon, "Anonymous", :value => true  %>
+    <%= form.radio_button :is_anon, true %> |
+    <%= form.label :is_anon, "Named", :value => false %>
+    <%= form.radio_button :is_anon, false %>
+  </div>
+
+  <br>
+
+  <div class="actions form-group">
+    <% if request.path != "/entries/new" %>
+      <%= link_to 'Back', entries_path, class:"btn btn-secondary" %> |
+    <% end %>
+    <%= form.submit class:"btn btn-secondary"%>
   </div>
 <% end %>

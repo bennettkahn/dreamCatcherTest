@@ -1,3 +1,5 @@
+.gitignore
+*/.DS_Store
 *.rbc
 capybara-*.html
 .rspec
@@ -15,9 +17,14 @@ pickle-email-*.html
 /app/assets/stylesheets/scaffolds.scss
 
 # Ignore all logfiles and tempfiles.
+<<<<<<< HEAD
+log/*
+tmp/*
+=======
 /log/*
 /log/development.log
 /tmp/*
+>>>>>>> main
 !/log/.keep
 !/tmp/.keep
 
@@ -58,9 +65,9 @@ bower.json
 node_modules/
 
 # Ignore precompiled javascript packs
-/public/packs
-/public/packs-test
-/public/assets
+#/public/packs
+#/public/packs-test
+#/public/assets
 
 # Ignore yarn files
 /yarn-error.log

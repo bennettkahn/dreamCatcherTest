@@ -1,19 +1,57 @@
-<p id="notice"><%= notice %></p>
+<div class="description rounded" style="font-size: 16px !important; margin-bottom: 20px; text-align: left !important;">
+  <p>
+    <strong>Title:</strong>
+    <%= @entry.title %>
+  </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @entry.title %>
-</p>
+  <p>
+    <strong>Description:</strong>
+    <%= @entry.description %>
+  </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @entry.description %>
-</p>
+  <p>
+    <strong>
+      Dream is
+      <% if @entry.is_private == true %>
+        private
+      <% else %>
+        public
+      <% end %>
+    </strong>
+  </p>
 
-<p>
-  <strong>Time:</strong>
-  <%= @entry.time %>
-</p>
+  <p>
+    <strong>
+      Dream is
+      <% if @entry.is_anon == true %>
+        anonymous
+      <% else %>
+        named
+      <% end %>
+    </strong>
+  </p>
+</div>
 
-<%= link_to 'Edit', edit_entry_path(@entry) %> |
-<%= link_to 'Back', entries_path %>
+<% if @entry.user == current_user %>
+  <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %> |
+<% end %>
+
+<!-- PUT LOGIC IN CONTROLLER OR SOMETHING -->
+<!-- single button line that grabs the correct pathing, if possible -->
+<!-- pass in @entry.user and current_user as arguments -->
+<% if user_signed_in? %>
+  <% if @entry.user == current_user %>
+
+    <!-- should link back to explore if coming from explore -->
+    <%= link_to 'Back', entries_path, class:"btn btn-secondary" %>
+
+  <% else %>
+
+    <%= link_to 'Back', home_explore_path, class:"btn btn-secondary" %>
+
+  <% end %>
+<% else %>
+
+  <%= link_to 'Back', home_explore_path, class:"btn btn-secondary" %>
+
+<% end %>

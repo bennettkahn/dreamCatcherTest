@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
-  resources :keywords
+  devise_for :users
   resources :users
   resources :entries
   root 'home#index'
-  get 'home/index'
+  get 'home/about'
+  get 'home/explore'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

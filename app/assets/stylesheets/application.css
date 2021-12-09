@@ -13,70 +13,105 @@
  *= require_tree .
  *= require_self
  */
- @import "css/bootstrap-grid.css";
- @import "css/bootstrap.rtl.css";
- @import "css/bootstrap.css";
- @import "css/bootstrap-grid.rtl.css";
- @import "css/bootstrap-reboot.css";
- @import "css/bootstrap-reboot.rtl.css";
- @import "css/bootstrap-utilities.css";
- @import "css/bootstrap-utilities.rtl.css";
 
+/* Kelly's preferred label font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
- h1{
-     font-family: "Pacifico", cursive;
-     color: darkblue;
-     font-size: 60px;
-     margin-top: 5px;
-     margin-left: 20px;
-     padding-left: 20px;
+/* Jake's prefered label fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap');
+
+/* Font for headers/titles */
+ .label-font {
+   font-family: "Indie Flower";
+   font-weight: bold;
  }
 
- .navbar ul {
-     list-style-type: none;
-     margin-top: 20px;
-     margin-right: 10px;
-     padding: 0;
-     overflow: hidden;
-     background-color: lightblue;
+ .table-font {
+   font-family: "Verdana";
+   font-size: 125%;
  }
- .navbar li {
-     float: right;
-     font-size: 20px;
-     font-family: 'Nunito', sans-serif;
-     border-left: 1px solid mediumpurple;
+
+ /* Paragraph/blurb/description formatting */
+ .description {
+   text-align: center;
+   margin-top: 20px;
+   font-family: "Verdana";
+   background-color: rgba(255, 255, 255, 0.8);
+   line-height: 1.75;
+   font-size: 20px;
+   padding: 16px 16px 16px 16px;
  }
- .navbar li:last-child {
-     border-left: none;
+
+ /* Overflow control for about description */
+ .about-spill{
+     /*height: 400px;*/
+     overflow: auto;
  }
- .navbar li a {
-     display: block;
-     color: rebeccapurple;
-     text-align: center;
-     padding: 14px 16px;
-     text-decoration: none;
+
+
+/*NOTE: WE Need to fix how the image resizes when we shrink the window */
+ .background-image {
+   opacity: 0.5;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: fixed;
  }
- .navbar {
-     display: block;
-     padding: 8px;
-     float: right;
-     color: rebeccapurple;
- }
- .navbar li a:hover {
-     background-color: mediumpurple;
- }
- .dream-log {
-     text-align: center;
-     padding-left: 20px;
- }
- form {
-     display: inline-block;
- }
- th{
-     font-family: 'Nunito', sans-serif;
-     color: rebeccapurple;
-     font-size: 30px;
- }
- table{
-     padding: 10px;
- }
+
+ /* Animation for about description */
+#about-animation {
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  z-index: 99999;
+}
+
+/* Keeps footer fixed at bottom without needing to scroll all the way down */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99999;
+  text-align: center;
+}
+
+/* Round corners of tables */
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
