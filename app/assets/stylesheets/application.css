@@ -81,12 +81,17 @@
   }
 }
 
+.header {
+  z-index: 99999;
+}
+
 /* Keeps footer fixed at bottom without needing to scroll all the way down */
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 99999;
   text-align: center;
 }
 

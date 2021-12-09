@@ -11,7 +11,11 @@ class User < ApplicationRecord
     if user.length() == 0
       return "Anonymous"
     end
-    return user[0].email # replace when first/last names are added
+    return user[0].email.split(/@/, 2).first # replace when first/last names are added
+  end
+
+  def user_to_name
+    return self.email.split(/@/, 2).first
   end
 
 end
