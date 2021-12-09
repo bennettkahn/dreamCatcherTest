@@ -162,7 +162,7 @@ h1 {
                     <%= entry.get_explore_name user_signed_in? %>
                     - <%= entry.created_at.strftime("%d %b %y") %>
                   </h2>
-                  <h4><%= entry.description[0, 70]%>...</h4>
+                  <h4><%= entry.description[0, 100]%>...</h4>
                 </article>
                 <%= image_tag "lav.png", alt: "Lavender background with dream info in front" %>
               </div>
