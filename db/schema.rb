@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 2021_12_07_163524) do
     t.integer "user_id"
     t.boolean "is_anon"
     t.boolean "is_private"
+    t.string "keyword"
+    t.string "user"
     t.index ["user_id"], name: "index_entries_on_user_id"
   end
 
@@ -34,6 +36,7 @@ ActiveRecord::Schema.define(version: 2021_12_07_163524) do
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
+    t.integer "user_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
