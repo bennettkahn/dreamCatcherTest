@@ -8,6 +8,28 @@
     <strong>Description:</strong>
     <%= @entry.description %>
   </p>
+
+  <p>
+    <strong>
+      Dream is
+      <% if @entry.is_private == true %>
+        private
+      <% else %>
+        public
+      <% end %>
+    </strong>
+  </p>
+
+  <p>
+    <strong>
+      Dream is
+      <% if @entry.is_anon == true %>
+        anonymous
+      <% else %>
+        named
+      <% end %>
+    </strong>
+  </p>
 </div>
 
 <% if @entry.user == current_user %>

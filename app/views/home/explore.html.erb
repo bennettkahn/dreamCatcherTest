@@ -144,32 +144,74 @@ h1 {
 </style>
 
 <h1 class="label-font">Explore</h1>
+<!--
+<<<<<<< HEAD
+<table class="table table-striped table-light table-font rounded">
+  <thead class="thead-dark">
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Date</th>
+      <% if user_signed_in? %>
+        <th>By...</th>
+      <% end %>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <% @entries.each do |entry| %>
+      <% if entry.user != current_user and entry.is_private == false %>
+        <tr>
+          <td style="width: 20%"><%= entry.title %></td>
+          <td><%= entry.description %></td>
+          <td style = "width: 10%"><%= entry.created_at.strftime("%d %b %y") %></td>
+          <% if user_signed_in? %>
+            <% if entry.is_anon == false %>
+              <td><%= entry.get_name.split(/@/, 2).first %></td>
+            <% else %>
+              <td>Anonymous</td>
+            <% end %>
+          <% end %>
+          <td><%= link_to image_tag('eye.png'), entry %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+=======-->
 
 
 <div class="album text-muted">
    <div class="container-fluid contenedor text-center">
       <div class="row row-cols-5">
           <% i = 0 %>
-         <% @entries.each do |entry| %>
-           <% if entry.user != current_user %>
+            <% @entries.each do |entry| %>
+              <% if entry.user != current_user and entry.is_private == false %>
 
-              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto " >
-                 <div class="ver_mas text-center" >
-                    <span  class="lnr lnr-eye">  view <%= link_to image_tag('eye.png', alt: "View Entry"), entry %>  </span>
-                 </div>
-                 <article class="text-left">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto " >
+                  <div class="ver_mas text-center" >
+                    <span  class="lnr lnr-eye">  view <%= link_to image_tag('eye.png', alt: "View Entry"), entry %> </span>
+                  </div>
+                  <article class="text-left">
                     <h2>
-                      <%= entry.title %> <br> <strong> <%= user_signed_in? ? entry.get_name : "" %> - <%= entry.created_at.strftime("%d %b %y") %></strong>
+                      <%= entry.title %>
+                      <br> 
+                      <% if user_signed_in? %>
+                        <% if entry.is_anon == false %>
+                          <strong><%= entry.get_name.split(/@/, 2).first %></strong>
+                        <% else %>
+                          <strong>Anonymous</strong>
+                        <% end %>
+                      <% end %>
+                      - <%= entry.created_at.strftime("%d %b %y") %>
                     </h2>
-                    <h4><%= entry.description[0, 100]%></h4>
-                 </article>
-
-                <% path = "../../assets/cards" + (i % 3).to_s %>
-                 <img src='<%= path %>' alt="">
-              </div>
-
-            <% end %>
+                    <h4><%= entry.description[0, 70]%>...</h4>
+                  </article>
+                  <% path = "../../assets/cards" + (i % 3).to_s %>
+                  <img src='<%= path %>' alt="">
+                </div>
+              <% end %>
             <% i += 1 %>
          <% end %>
       </div>
@@ -182,6 +224,7 @@ h1 {
 
 
 
-
-
+<!--
+>>>>>>> jake
+-->
 <br>

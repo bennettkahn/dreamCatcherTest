@@ -29,7 +29,28 @@
 
   <br>
 
+  <!-- use radiobutton no checkbox -->
+
+  <div class="field form-group">
+    <%= form.label :is_private, "Private", :value => true  %>
+    <%= form.radio_button :is_private, true %> |
+    <%= form.label :is_private, "Public", :value => false %>
+    <%= form.radio_button :is_private, false %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :is_anon, "Anonymous", :value => true  %>
+    <%= form.radio_button :is_anon, true %> |
+    <%= form.label :is_anon, "Named", :value => false %>
+    <%= form.radio_button :is_anon, false %>
+  </div>
+
+  <br>
+
   <div class="actions form-group">
+    <% if request.path != "/entries/new" %>
+      <%= link_to 'Back', entries_path, class:"btn btn-secondary" %> |
+    <% end %>
     <%= form.submit class:"btn btn-secondary"%>
   </div>
 <% end %>
