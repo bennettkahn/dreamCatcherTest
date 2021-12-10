@@ -17,8 +17,14 @@ pickle-email-*.html
 /app/assets/stylesheets/scaffolds.scss
 
 # Ignore all logfiles and tempfiles.
+<<<<<<< HEAD
 log/*
 tmp/*
+=======
+/log/*
+/log/development.log
+/tmp/*
+>>>>>>> main
 !/log/.keep
 !/tmp/.keep
 
