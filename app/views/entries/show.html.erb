@@ -1,34 +1,26 @@
 <div class="description rounded" style="font-size: 16px !important; margin-bottom: 20px; text-align: left !important;">
   <p>
-    <strong>Title:</strong>
-    <%= @entry.title %>
+    <div class = "entry-title"><%= @entry.title %></div>
   </p>
 
   <p>
-    <strong>Description:</strong>
-    <%= @entry.description %>
+    <div class = "entry-description"><%= @entry.description %></div>
   </p>
 
   <p>
-    <strong>
+    <i>
       Dream is
       <% if @entry.is_private == true %>
         private
       <% else %>
-        public
+        public and
+        <% if @entry.is_anon == true %>
+          anonymous
+        <% else %>
+          named
+        <% end %>
       <% end %>
-    </strong>
-  </p>
-
-  <p>
-    <strong>
-      Dream is
-      <% if @entry.is_anon == true %>
-        anonymous
-      <% else %>
-        named
-      <% end %>
-    </strong>
+    </i>
   </p>
 </div>
 

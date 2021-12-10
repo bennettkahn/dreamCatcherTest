@@ -115,3 +115,12 @@ table tr:last-child td:first-child {
 table tr:last-child td:last-child {
   border-bottom-right-radius: 6px;
 }
+
+/* To format entry views */
+.entry-title{
+    font-size: 35px;
+    font-weight: bold;
+}
+.entry-description{
+    font-size: 18px;
+}
