@@ -1,0 +1,117 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* Kelly's preferred label font */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Jake's prefered label fonts */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300&display=swap');
+
+/* Font for headers/titles */
+ .label-font {
+   font-family: "Indie Flower";
+   font-weight: bold;
+ }
+
+ .table-font {
+   font-family: "Verdana";
+   font-size: 125%;
+ }
+
+ /* Paragraph/blurb/description formatting */
+ .description {
+   text-align: center;
+   margin-top: 20px;
+   font-family: "Verdana";
+   background-color: rgba(255, 255, 255, 0.8);
+   line-height: 1.75;
+   font-size: 20px;
+   padding: 16px 16px 16px 16px;
+ }
+
+ /* Overflow control for about description */
+ .about-spill{
+     /*height: 400px;*/
+     overflow: auto;
+ }
+
+
+/*NOTE: WE Need to fix how the image resizes when we shrink the window */
+ .background-image {
+   opacity: 0.5;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: fixed;
+ }
+
+ /* Animation for about description */
+#about-animation {
+  animation-name: fade-in;
+  animation-duration: 5s;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  z-index: 99999;
+}
+
+/* Keeps footer fixed at bottom without needing to scroll all the way down */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 99999;
+  text-align: center;
+}
+
+/* Round corners of tables */
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}
