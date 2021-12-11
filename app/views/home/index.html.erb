@@ -27,10 +27,6 @@
       </p>
     </div>
 
-    <p>
-      test
-    </p>
-
 <script type="text/javascript">
 
 var images = new Array();
@@ -52,24 +48,39 @@ preloadImages("../../assets/images/dream0.jpeg", "../../assets/images/dream1.jpe
 </script>
 
 <head>
-<style>
-.carousel .carousel-item {
-  height: 500px;
-  width: 100%;
-}
+  <style>
+    .carousel .carousel-item {
+      height: 500px;
+      /*width: 100%;*/
+      margin: auto;
+    }
 
-.carousel-item img {
-  width: 600px;
-  height: 600px;
-}
+    .carousel-item img {
+      height: 600px;
+      margin: auto;
+    }
 
-.carousel-fix {
-  z-index: -4;
-}
+    .carousel-fix {
+      z-index: -4;
+    }
 
-</style>
+    #dream-0 img {
+      width: 700px;
+    }
+    #dream-1 img {
+      width: 900px;
+    }
+    #dream-2 img {
+      width: 800px;
+    }
+    #dream-3 img {
+      width: 600px;
+    }
+    #dream-4 img {
+      width: 700px;
+    }
+    </style>
 </head>
-
 
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -88,28 +99,28 @@ preloadImages("../../assets/images/dream0.jpeg", "../../assets/images/dream1.jpe
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active" data-interval="2000">
-          <div class="d-flex justify-content-center">
-            <img class="d-block w-65" src="<%= image_path('logo.png') %>" alt="Girl dreaming">
+          <div class="d-flex justify-content-center" id="dream-0">
+            <img class="d-block w-65" src="<%= image_path('dream0.jpg') %>" alt="Person sleeping on bed">
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <img class="d-block w-65" src="<%= image_path('lav.png') %>" alt="Brain waves">
+          <div class="d-flex justify-content-center" id="dream-1">
+            <img class="d-block w-65" src="<%= image_path('dream1.jpg') %>" alt="Person sleeping in hammock in the clouds">
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <img class="d-block w-65" src="<%= image_path('lav.png') %>" alt="Night sky">
+          <div class="d-flex justify-content-center" id="dream-2">
+            <img class="d-block w-65" src="<%= image_path('dream2.jpg') %>" alt="Outline of child in a star-filled sky">
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <img class="d-block w-65" src="<%= image_path('lav.png') %>" alt="Person dreaming">
+          <div class="d-flex justify-content-center" id="dream-3">
+            <img class="d-block w-65" src="<%= image_path('dream3.jpg') %>" alt="Child sleeping, clutching a stuffed bear">
           </div>
         </div>
         <div class="carousel-item">
-          <div class="d-flex justify-content-center">
-            <img class="d-block w-65" src="<%= image_path('lav.png') %>" alt="Boy dreaming">
+          <div class="d-flex justify-content-center" id="dream-4">
+            <img class="d-block w-65" src="<%= image_path('dream4.jpg') %>" alt="Person rowing a boat over the clouds into a starry distance">
           </div>
         </div>
     </div>
