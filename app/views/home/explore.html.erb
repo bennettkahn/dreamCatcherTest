@@ -164,7 +164,8 @@ h1 {
                   </h2>
                   <h4><%= entry.description[0, 100]%>...</h4>
                 </article>
-                <%= image_tag "lav.png", alt: "Lavender background with dream info in front" %>
+                <img src="<%= image_path('lav.png') %>" alt="Lavender background with dream info in front", style="height: 250px;">
+                <!--<%= image_tag "lav.png", alt: "Lavender background with dream info in front" %>-->
               </div>
             <% end %>
           <% i += 1 %>
