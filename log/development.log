@@ -17959,3 +17959,105 @@ Processing by EntriesController#index as HTML
 Completed 200 OK in 75ms (Views: 71.0ms | ActiveRecord: 1.9ms | Allocations: 14726)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-10 23:57:52 -0600
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 53.5ms | Allocations: 15193)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 1060)
+  Rendered home/_footer.html.erb (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 21844)
+Completed 200 OK in 93ms (Views: 73.4ms | ActiveRecord: 2.0ms | Allocations: 27056)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-10 23:57:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/public/dream1.jpeg" for 127.0.0.1 at 2021-12-10 23:57:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/public/dream1.jpeg"):
+  
+Started GET "/app/assets/images/dream2.jpeg" for 127.0.0.1 at 2021-12-10 23:57:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/entries" for 127.0.0.1 at 2021-12-10 23:57:54 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.5ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 83.2ms | Allocations: 17545)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 670)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 96.9ms | Allocations: 22444)
+Completed 200 OK in 113ms (Views: 100.3ms | ActiveRecord: 3.3ms | Allocations: 24861)
+
+
+Started GET "/public/dream1.jpeg" for 127.0.0.1 at 2021-12-10 23:57:54 -0600
+Started GET "/app/assets/images/dream2.jpeg" for 127.0.0.1 at 2021-12-10 23:57:54 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/public/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/dream2.jpeg"):
+  
+Started GET "/entries/14" for 127.0.0.1 at 2021-12-10 23:57:56 -0600
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/entries_controller.rb:76:in `set_entry'
+  Rendering layout layouts/application.html.erb
+  Rendering entries/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/entries/show.html.erb:35
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/views/entries/show.html.erb:35
+  Rendered entries/show.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1792)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 641)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 6733)
+Completed 200 OK in 27ms (Views: 19.2ms | ActiveRecord: 0.7ms | Allocations: 8034)
+
+
