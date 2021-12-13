@@ -12,4 +12,5 @@ class Entry < ApplicationRecord
       return self.get_name.split(/@/, 2).first
     end
   end
+
 end

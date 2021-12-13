@@ -48,6 +48,9 @@ group :development do
   gem 'spring'
 end
 
+# Pagination
+gem 'will_paginate'
+gem 'will_paginate-bootstrap-style'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
