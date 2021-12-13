@@ -11,4 +11,5 @@ class ApplicationRecord < ActiveRecord::Base
     colors_dict["up"] = request_path == "/users/sign_up" ? "#967BB6" : ""
     return colors_dict
   end
+  
 end

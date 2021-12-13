@@ -6,8 +6,6 @@ class HomeController < ApplicationController
   end
 
   def explore
-    @entries = Entry.all
-    #@public_entries = Entry.where(is_private: false)
-    @pag_entries = Entry.where(is_private: false).paginate(page: params[:page], per_page: 6)
+    @public_entries = Entry.where(is_private: false).where.not(user: current_user).paginate(page: params[:page], per_page: 6)
   end
 end

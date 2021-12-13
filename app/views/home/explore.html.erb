@@ -185,31 +185,28 @@ h1 {
 
 <div class="album text-muted">
    <div class="container-fluid contenedor text-center">
-    <%= will_paginate @pag_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
+    <%= will_paginate @public_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
       <div class="row row-cols-5">
-        <% @pag_entries.each do |entry| %>
-          <% if entry.user != current_user %>
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto " >
-              <div class="ver_mas text-center" >
-                <span  class="lnr lnr-eye">  View Dream <%= link_to image_tag('eye.png', alt: "View Dream"), entry %> </span>
-              </div>
-              <article class="text-left">
-                <h2>
-                  <%= entry.title %>
-                  <br> 
-                  <%= entry.get_explore_name user_signed_in? %>
-                  - <%= entry.created_at.strftime("%d %b %y") %>
-                </h2>
-                <h4><%= entry.description[0, 100]%>...</h4>
-              </article>
-              <img src="<%= image_path('lav.png') %>" alt="Lavender background with dream info in front", style="height: 250px;">
+        <% @public_entries.each do |entry| %>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto " >
+            <div class="ver_mas text-center" >
+              <span  class="lnr lnr-eye">  View Dream <%= link_to image_tag('eye.png', alt: "View Dream"), entry %> </span>
             </div>
-          <% end %>
+            <article class="text-left">
+              <h2>
+                <%= entry.title %>
+                <br> 
+                <%= entry.get_explore_name user_signed_in? %>
+                - <%= entry.created_at.strftime("%d %b %y") %>
+              </h2>
+              <h4><%= entry.description[0, 100]%>...</h4>
+            </article>
+            <img src="<%= image_path('lav.png') %>" alt="Lavender background with dream info in front", style="height: 250px;">
+          </div>
         <% end %>
       </div>  
-      <%= will_paginate @pag_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
+      <%= will_paginate @public_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
    </div>
 </div>
-
 
 <br>
