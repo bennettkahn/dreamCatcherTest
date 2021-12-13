@@ -140,6 +140,44 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 3;
+}
+
+/* PAGINATION */
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #5A4181;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #5A4181 !Important;
+    border: solid 1px #5A4181 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #5A4181 !Important;
+    border: solid 1px #5A4181;
+}
+
+.page-item.active .page-link {
+  color: #fff !important;
+  background: #5A4181 !important;
+  border: solid 1px #5A4181;
+}
 
 </style>
 
@@ -147,8 +185,9 @@ h1 {
 
 <div class="album text-muted">
    <div class="container-fluid contenedor text-center">
+    <%= will_paginate @pag_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
       <div class="row row-cols-5">
-        <% @public_entries.each do |entry| %>
+        <% @pag_entries.each do |entry| %>
           <% if entry.user != current_user %>
             <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto " >
               <div class="ver_mas text-center" >
@@ -167,40 +206,10 @@ h1 {
             </div>
           <% end %>
         <% end %>
-      </div>
+      </div>  
+      <%= will_paginate @pag_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
    </div>
 </div>
 
-<div class="album text-muted">
-   <div class="container-fluid contenedor text-center">
-      <div class="row row-cols-5">
-
-        <%= will_paginate @pag_entries %>
-        <br><br><br><br>
-          <% @pag_entries.each do |entry| %>
-            <% if entry.user != current_user %>
-              <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto " >
-                <div class="ver_mas text-center" >
-                  <span  class="lnr lnr-eye">  View Dream <%= link_to image_tag('eye.png', alt: "View Dream"), entry %> </span>
-                </div>
-                <article class="text-left">
-                  <h2>
-                    <%= entry.title %>
-                    <br> 
-                    <%= entry.get_explore_name user_signed_in? %>
-                    - <%= entry.created_at.strftime("%d %b %y") %>
-                  </h2>
-                  <h4><%= entry.description[0, 100]%>...</h4>
-                </article>
-                <img src="<%= image_path('lav.png') %>" alt="Lavender background with dream info in front", style="height: 250px;">
-              </div>
-            <% end %>
-          <% end %>
-          <br>
-        <%= will_paginate @pag_entries %>
-
-      </div>
-   </div>
-</div>
 
 <br>
