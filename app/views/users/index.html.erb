@@ -2,24 +2,33 @@
 
 <h1 class="label-font">Users</h1>
 
-<table class="table table-light table-striped table-font">
-  <thead>
-    <tr>
-      <th>Email</th>
-      <th>Date Joined</th>
-      <th colspan="2"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @users.each do |user| %>
+<!-- Prevent people other than admin from accessing users page... -->
+<% if current_user != nil and current_user.email == "jslehner16@gmail.com" %>
+
+
+  <table class="table table-light table-striped table-font">
+    <thead>
       <tr>
-        <td><%= user.email %></td>
-        <td><%= user.created_at %></td>
-        <td><%= link_to 'Show', user %></td>
+        <th>Email</th>
+        <th>Date Joined</th>
+        <th colspan="2"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.email %></td>
+          <td><%= user.created_at %></td>
+          <td><%= link_to 'Show', user %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+<% else %>
+  <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+<% end %>
