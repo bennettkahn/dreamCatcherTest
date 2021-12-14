@@ -21338,3 +21338,154 @@ Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1077)
 ActiveRecord::RecordNotFound (Couldn't find User with 'id'=7):
   
 app/controllers/users_controller.rb:62:in `set_user'
+Started GET "/" for 127.0.0.1 at 2021-12-13 22:06:01 -0600
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 169.2ms | Allocations: 39777)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 1215)
+  Rendered home/_footer.html.erb (Duration: 0.4ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 191.0ms | Allocations: 52456)
+Completed 200 OK in 211ms (Views: 199.8ms | ActiveRecord: 0.8ms | Allocations: 58246)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:06:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-13 22:06:04 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 4357)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 702)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 9604)
+Completed 200 OK in 43ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 17066)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-13 22:06:14 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"bkahn1@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "bkahn1@tulane.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms | Allocations: 1907)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"bkahn1@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 621)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 5968)
+Completed 200 OK in 215ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 7459)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:06:14 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-12-13 22:06:17 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.6ms | Allocations: 188)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 2051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 694)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 7225)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 8988)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-13 22:06:33 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"Bennett", "email"=>"bkahn1@tulane.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "bkahn1@tulane.edu"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Bennett"], ["created_at", "2021-12-14 04:06:34.100209"], ["updated_at", "2021-12-14 04:06:34.100209"], ["email", "bkahn1@tulane.edu"], ["encrypted_password", "$2a$12$pGtKN52IQLuFrYoyVb.vc.06b0o3hQRUled2cAtBdcXinqFhRBbqK"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 220ms (ActiveRecord: 1.4ms | Allocations: 7669)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-13 22:06:34 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 679)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 108)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 8247)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.1ms | Allocations: 8789)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:06:34 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+Started GET "/entries" for 127.0.0.1 at 2021-12-13 22:06:36 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:97
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:106
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:106
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:106
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:106
+  Rendered /Users/bennettkahn/.rbenv/versions/3.0.2/lib/ruby/gems/3.0.0/gems/simple_calendar-2.4.3/app/views/simple_calendar/_month_calendar.html.erb (Duration: 32.0ms | Allocations: 11265)
+  Rendered entries/index.html.erb within layouts/application (Duration: 48.8ms | Allocations: 18599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 684)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 56.6ms | Allocations: 23699)
+Completed 200 OK in 65ms (Views: 56.4ms | ActiveRecord: 2.9ms | Allocations: 26246)
+
+
