@@ -1,0 +1,16 @@
+<div class="search-result-title"><%= entry.title %></div>
+<div class="search-result-body"><%= entry.description %></div>
+<div class="search-result-anon">
+<p>
+  <i>
+    <% if user_signed_in? %>
+    Dream is public
+      <% if entry.is_anon != true %>
+        and written by
+      <%= entry.get_explore_name true %>
+      <% end %>
+    <% end %>
+  </i>
+</p>
+</div>
+

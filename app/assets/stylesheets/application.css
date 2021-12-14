@@ -123,4 +123,36 @@ table tr:last-child td:last-child {
 }
 .entry-description{
     font-size: 18px;
-} 
+}
+
+/* To format search results page*/
+.search-results-header{
+    font-family: "Verdana";
+    font-weight: bold;
+    font-size: 45px;
+    background-color: rgb(205, 188, 243);
+    line-height: 1.75;
+    padding: 16px 16px 16px 16px;
+}
+.search-result-title{
+    font-family: "Verdana";
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 1.75;
+    padding: 16px 16px 16px 16px;
+}
+.search-result-body{
+    font-family: "Verdana";
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 1.75;
+    padding: 16px 16px 16px 16px;
+
+}
+.search-result-anon{
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    line-height: 1.75;
+    padding: 16px 16px 16px 16px;
+}
