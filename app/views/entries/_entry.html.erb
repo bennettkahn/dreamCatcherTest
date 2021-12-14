@@ -1,0 +1,20 @@
+<%= entry.title %>
+<%= entry.description %>
+
+<p>
+  <i>
+    Dream is
+    <% if entry.is_private == true %>
+      private
+    <% else %>
+      public
+      <% if entry.is_anon == true %>
+        and anonymous
+      <% else %>
+        and written by
+        <%= entry.user_id %>
+      <% end %>
+    <% end %>
+  </i>
+</p>
+
