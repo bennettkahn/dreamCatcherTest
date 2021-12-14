@@ -18599,3 +18599,2742 @@ Completed 200 OK in 326ms (Views: 324.6ms | ActiveRecord: 0.0ms | Allocations: 8
   
 ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
   
+Started GET "/" for ::1 at 2021-12-13 17:42:41 -0600
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 117.3ms | Allocations: 30712)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/jakelehner/Desktop/dreamCatcherTest/public/packs
+[Webpacker] Hash: 04ab6bacdf68b541c8d2
+Version: webpack 4.46.0
+Time: 1585ms
+Built at: 12/13/2021 5:42:45 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-2684c74afa830fd41230.js    125 KiB  application  [emitted] [immutable]  application
+js/application-2684c74afa830fd41230.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-2684c74afa830fd41230.js js/application-2684c74afa830fd41230.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 534 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 1213)
+  Rendered home/_footer.html.erb (Duration: 0.8ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 4265.7ms | Allocations: 42335)
+Completed 200 OK in 4303ms (Views: 4274.4ms | ActiveRecord: 0.0ms | Allocations: 51246)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 17:42:45 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/home/explore" for ::1 at 2021-12-13 17:42:49 -0600
+Processing by HomeController#explore as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" IS NOT NULL[0m  [["is_private", 0]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" IS NOT NULL LIMIT ? OFFSET ?[0m  [["is_private", 0], ["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/home/explore.html.erb:190
+  Rendered home/explore.html.erb within layouts/application (Duration: 20.5ms | Allocations: 12874)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 627)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 17663)
+Completed 200 OK in 39ms (Views: 26.3ms | ActiveRecord: 2.3ms | Allocations: 21676)
+
+
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 17:42:49 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+Started GET "/home/explore" for ::1 at 2021-12-13 17:42:55 -0600
+Processing by HomeController#explore as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" IS NOT NULL[0m  [["is_private", 0]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" IS NOT NULL LIMIT ? OFFSET ?[0m  [["is_private", 0], ["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/home/explore.html.erb:190
+  Rendered home/explore.html.erb within layouts/application (Duration: 10.3ms | Allocations: 6057)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 622)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 10808)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 0.4ms | Allocations: 11609)
+
+
+Started GET "/home/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 17:42:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/app/assets/stylesheets/application.css"):
+  
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 17:42:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+Started GET "/users/sign_in" for ::1 at 2021-12-13 17:42:56 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 27.9ms | Allocations: 7928)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 700)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 13130)
+Completed 200 OK in 53ms (Views: 39.1ms | ActiveRecord: 0.5ms | Allocations: 21137)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-12-13 17:42:57 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.0ms | Allocations: 188)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 692)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7211)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 8900)
+
+
+Started GET "/" for ::1 at 2021-12-13 17:42:59 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2407)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 636)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 7197)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 7778)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/users/sign_in" for ::1 at 2021-12-13 17:43:11 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 645)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 5732)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 6509)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-12-13 17:43:23 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jlehner@tulane.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.4ms | Allocations: 2242)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 888)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 619)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5937)
+Completed 200 OK in 231ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 7887)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 17:43:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started POST "/users/sign_in" for ::1 at 2021-12-13 17:43:29 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jlehner@tulane.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.2ms | Allocations: 1521)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 611)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 5694)
+Completed 200 OK in 221ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6326)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 17:43:29 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started POST "/users/sign_in" for ::1 at 2021-12-13 17:43:34 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jlehner@tulane.edu"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.1ms | Allocations: 1366)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 609)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 5690)
+Completed 200 OK in 218ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 6312)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 17:43:35 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/sign_up" for ::1 at 2021-12-13 17:43:37 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 646)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5999)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 6699)
+
+
+Started POST "/users" for ::1 at 2021-12-13 17:43:55 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"Jake", "email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jlehner@tulane.edu"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Jake"], ["created_at", "2021-12-13 23:43:55.873963"], ["updated_at", "2021-12-13 23:43:55.873963"], ["email", "jlehner@tulane.edu"], ["encrypted_password", "$2a$12$c6SOCs1AtP47LAF/6g4kreAs2wZvqz3Te1GYzQy/Z0gVfBZIwEKZ2"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 221ms (ActiveRecord: 1.9ms | Allocations: 7119)
+
+
+Started GET "/" for ::1 at 2021-12-13 17:43:55 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3091)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 679)
+  Rendered layouts/_alerts.html.erb (Duration: 0.7ms | Allocations: 108)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 8238)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 8771)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 17:43:55 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/entries/new" for ::1 at 2021-12-13 17:44:33 -0600
+Processing by EntriesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/new.html.erb within layouts/application
+  Rendered entries/_form.html.erb (Duration: 7.3ms | Allocations: 2587)
+  Rendered entries/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2925)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 689)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 8039)
+Completed 200 OK in 54ms (Views: 30.4ms | ActiveRecord: 0.2ms | Allocations: 15936)
+
+
+Started GET "/entries" for ::1 at 2021-12-13 17:44:35 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (1.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 26.8ms | Allocations: 13573)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.3ms | Allocations: 644)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 18476)
+Completed 200 OK in 36ms (Views: 32.9ms | ActiveRecord: 2.0ms | Allocations: 19254)
+
+
+Started GET "/home/explore" for ::1 at 2021-12-13 17:44:36 -0600
+Processing by HomeController#explore as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:9:in `explore'
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ?[0m  [["is_private", 0], ["user_id", 44]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ? LIMIT ? OFFSET ?[0m  [["is_private", 0], ["user_id", 44], ["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/home/explore.html.erb:190
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 42]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 43]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  Rendered home/explore.html.erb within layouts/application (Duration: 20.4ms | Allocations: 9299)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.6ms | Allocations: 643)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 30.1ms | Allocations: 14070)
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 1.8ms | Allocations: 15402)
+
+
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 17:44:36 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+Started GET "/home/explore?page=2" for ::1 at 2021-12-13 17:44:38 -0600
+Processing by HomeController#explore as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:9:in `explore'
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ?[0m  [["is_private", 0], ["user_id", 44]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ? LIMIT ? OFFSET ?[0m  [["is_private", 0], ["user_id", 44], ["LIMIT", 6], ["OFFSET", 6]]
+  ↳ app/views/home/explore.html.erb:190
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 42]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 43]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  Rendered home/explore.html.erb within layouts/application (Duration: 12.3ms | Allocations: 7023)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 643)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 11794)
+Completed 200 OK in 24ms (Views: 20.3ms | ActiveRecord: 0.8ms | Allocations: 13095)
+
+
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 17:44:38 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+Started GET "/entries/13" for ::1 at 2021-12-13 17:44:42 -0600
+Processing by EntriesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/entries_controller.rb:76:in `set_entry'
+  Rendering layout layouts/application.html.erb
+  Rendering entries/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/show.html.erb:25
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/entries/show.html.erb:25
+  Rendered entries/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1719)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 645)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 6632)
+Completed 200 OK in 19ms (Views: 14.4ms | ActiveRecord: 0.6ms | Allocations: 7869)
+
+
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 17:44:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+Started GET "/" for ::1 at 2021-12-13 17:44:46 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3026)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.7ms | Allocations: 2181)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  Rendered layout layouts/application.html.erb (Duration: 110.8ms | Allocations: 42987)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Completed 200 OK in 161ms (Views: 160.4ms | ActiveRecord: 0.1ms | Allocations: 73679)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+Started GET "/entries" for ::1 at 2021-12-13 17:44:48 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 28.5ms | Allocations: 12709)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 646)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 17623)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 1.2ms | Allocations: 18170)
+
+
+Started GET "/" for ::1 at 2021-12-13 17:44:49 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 24.4ms | Allocations: 5996)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 7.4ms | Allocations: 2710)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 153.6ms | Allocations: 87267)
+Completed 200 OK in 155ms (Views: 154.3ms | ActiveRecord: 0.2ms | Allocations: 88172)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+Started GET "/entries" for ::1 at 2021-12-13 17:44:50 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 12710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 646)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 34.2ms | Allocations: 17623)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 1.1ms | Allocations: 18169)
+
+
+Started GET "/" for ::1 at 2021-12-13 17:44:52 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  Rendered home/index.html.erb within layouts/application (Duration: 89.4ms | Allocations: 38138)
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 2765)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 160.0ms | Allocations: 90059)
+Completed 200 OK in 162ms (Views: 160.5ms | ActiveRecord: 0.2ms | Allocations: 90845)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/entries" for ::1 at 2021-12-13 17:45:38 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 39.8ms | Allocations: 12710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.8ms | Allocations: 646)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 17625)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 1.8ms | Allocations: 18169)
+
+
+Started GET "/entries" for ::1 at 2021-12-13 17:45:41 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.5ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 29.8ms | Allocations: 12710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 644)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 17609)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 1.5ms | Allocations: 18160)
+
+
+Started GET "/home/explore" for ::1 at 2021-12-13 17:45:41 -0600
+Processing by HomeController#explore as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:9:in `explore'
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ?[0m  [["is_private", 0], ["user_id", 44]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ? LIMIT ? OFFSET ?[0m  [["is_private", 0], ["user_id", 44], ["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/home/explore.html.erb:190
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 17:45:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 42]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 43]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  Rendered home/explore.html.erb within layouts/application (Duration: 59.3ms | Allocations: 21731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 1042)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 29022)
+Completed 200 OK in 82ms (Views: 74.6ms | ActiveRecord: 1.5ms | Allocations: 30339)
+
+
+Started GET "/home/explore?page=2" for ::1 at 2021-12-13 17:45:44 -0600
+Processing by HomeController#explore as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:9:in `explore'
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ?[0m  [["is_private", 0], ["user_id", 44]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ? LIMIT ? OFFSET ?[0m  [["is_private", 0], ["user_id", 44], ["LIMIT", 6], ["OFFSET", 6]]
+  ↳ app/views/home/explore.html.erb:190
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 17:45:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 42]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 43]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  Rendered home/explore.html.erb within layouts/application (Duration: 41.3ms | Allocations: 20195)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 1564)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 74.0ms | Allocations: 49586)
+Completed 200 OK in 80ms (Views: 74.7ms | ActiveRecord: 1.0ms | Allocations: 51021)
+
+
+Started GET "/users" for ::1 at 2021-12-13 17:46:09 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:24
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 1447)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 7111)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.4ms | Allocations: 8566)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 17:46:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/users" for ::1 at 2021-12-13 19:01:10 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2244)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2500)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.0ms | Allocations: 7651)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @users.each do |user| %>
+    16:       <tr>
+    17:         <td><%= user.email %></td>
+    18:         <td><%= user.created_at %></td>
+  
+app/views/users/index.html.erb:15
+Started GET "/" for ::1 at 2021-12-13 19:01:17 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 60.6ms | Allocations: 16960)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 8.1ms | Allocations: 1253)
+  Rendered home/_footer.html.erb (Duration: 0.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 106.2ms | Allocations: 23645)
+Completed 200 OK in 116ms (Views: 111.2ms | ActiveRecord: 0.8ms | Allocations: 25103)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:01:18 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/home/explore" for ::1 at 2021-12-13 19:01:23 -0600
+Processing by HomeController#explore as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/controllers/home_controller.rb:9:in `explore'
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ?[0m  [["is_private", 0], ["user_id", 44]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" != ? LIMIT ? OFFSET ?[0m  [["is_private", 0], ["user_id", 44], ["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/home/explore.html.erb:190
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 42]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 43]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 40]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ?[0m  [["id", 41]]
+  ↳ app/models/user.rb:11:in `id_to_name'
+  Rendered home/explore.html.erb within layouts/application (Duration: 29.3ms | Allocations: 15036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 650)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 19847)
+Completed 200 OK in 51ms (Views: 37.8ms | ActiveRecord: 2.1ms | Allocations: 23742)
+
+
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 19:01:23 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+Started GET "/" for ::1 at 2021-12-13 19:01:24 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 3039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 659)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 7870)
+Completed 200 OK in 17ms (Views: 16.6ms | ActiveRecord: 0.1ms | Allocations: 8405)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/entries" for ::1 at 2021-12-13 19:01:25 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 31.6ms | Allocations: 15060)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 681)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 20261)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 1.2ms | Allocations: 21755)
+
+
+Started GET "/entries/new" for ::1 at 2021-12-13 19:01:25 -0600
+Processing by EntriesController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/new.html.erb within layouts/application
+  Rendered entries/_form.html.erb (Duration: 11.8ms | Allocations: 4427)
+  Rendered entries/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 4746)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 658)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 9754)
+Completed 200 OK in 32ms (Views: 25.6ms | ActiveRecord: 0.1ms | Allocations: 13258)
+
+
+Started GET "/users/edit" for ::1 at 2021-12-13 19:01:26 -0600
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 214)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 6.9ms | Allocations: 3460)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 688)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 8598)
+Completed 200 OK in 21ms (Views: 16.8ms | ActiveRecord: 0.1ms | Allocations: 11777)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-12-13 19:01:27 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.9ms | Allocations: 3332)
+
+
+Started GET "/" for ::1 at 2021-12-13 19:01:27 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2574)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 650)
+  Rendered layouts/_alerts.html.erb (Duration: 0.4ms | Allocations: 125)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 7793)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 8381)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:01:27 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/users/sign_in" for ::1 at 2021-12-13 19:01:29 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1587)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.6ms | Allocations: 701)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 6836)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 8398)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-12-13 19:01:30 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1458)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 648)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6395)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 7333)
+
+
+Started POST "/users" for ::1 at 2021-12-13 19:01:46 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"jakey", "email"=>"jslehner16@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "jslehner16@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "jakey"], ["created_at", "2021-12-14 01:01:46.721632"], ["updated_at", "2021-12-14 01:01:46.721632"], ["email", "jslehner16@gmail.com"], ["encrypted_password", "$2a$12$HGbKLhnHTGAGzJy6lHBIkuL75fLk.2QpFcOVYxJzBiTsSmPqFJUIu"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 264ms (ActiveRecord: 2.1ms | Allocations: 9840)
+
+
+Started GET "/" for ::1 at 2021-12-13 19:01:46 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 663)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 8090)
+Completed 200 OK in 21ms (Views: 19.3ms | ActiveRecord: 0.8ms | Allocations: 8681)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:01:46 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/entries" for ::1 at 2021-12-13 19:01:50 -0600
+Processing by EntriesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering entries/index.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries"[0m
+  ↳ app/views/entries/index.html.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  ↳ app/views/entries/index.html.erb:16
+  Rendered entries/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 12730)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 647)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 17651)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.9ms | Allocations: 18204)
+
+
+Started GET "/entries/new" for ::1 at 2021-12-13 19:01:50 -0600
+Processing by EntriesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/new.html.erb within layouts/application
+  Rendered entries/_form.html.erb (Duration: 1.8ms | Allocations: 1116)
+  Rendered entries/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1175)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 644)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 6063)
+Completed 200 OK in 16ms (Views: 11.6ms | ActiveRecord: 0.3ms | Allocations: 7756)
+
+
+Started GET "/users/edit" for ::1 at 2021-12-13 19:01:51 -0600
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered devise/registrations/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 644)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 6344)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 7902)
+
+
+Started GET "/users" for ::1 at 2021-12-13 19:01:54 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1367)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1435)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1929)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @users.each do |user| %>
+    16:       <tr>
+    17:         <td><%= user.email %></td>
+    18:         <td><%= user.created_at %></td>
+  
+app/views/users/index.html.erb:15
+Started GET "/" for ::1 at 2021-12-13 19:02:13 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 3035)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 659)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 7865)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.1ms | Allocations: 8389)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:02:13 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+Started DELETE "/users/sign_out" for ::1 at 2021-12-13 19:02:20 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms | Allocations: 1779)
+
+
+Started GET "/" for ::1 at 2021-12-13 19:02:20 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 639)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 7305)
+Completed 200 OK in 17ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 7820)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:02:20 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+Started GET "/users/sign_in" for ::1 at 2021-12-13 19:02:22 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 646)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 5739)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 6499)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-12-13 19:02:24 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 782)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 643)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 5713)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 6460)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:02:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started POST "/users/sign_in" for ::1 at 2021-12-13 19:02:41 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jslehner16@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jslehner16@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 225ms (ActiveRecord: 0.3ms | Allocations: 5194)
+
+
+Started GET "/" for ::1 at 2021-12-13 19:02:41 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 3124)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 663)
+  Rendered layouts/_alerts.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8073)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.1ms | Allocations: 8653)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:02:41 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/" for ::1 at 2021-12-13 19:02:53 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/home/index.html.erb:3
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 9776)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 723)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 14811)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.9ms | Allocations: 16344)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:02:53 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+Started GET "/users" for ::1 at 2021-12-13 19:02:57 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:15
+  Rendered users/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1139)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:24
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 1444)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 7097)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.4ms | Allocations: 8043)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 19:02:57 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 19:03:00 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 257)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:24
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 1340)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5871)
+Completed 200 OK in 16ms (Views: 11.5ms | ActiveRecord: 0.4ms | Allocations: 7144)
+
+
+Started GET "/users/40" for ::1 at 2021-12-13 20:07:48 -0600
+  
+NoMethodError (undefined method `redirect_to' for UsersController:Class):
+  
+app/controllers/users_controller.rb:4:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/users/40" for ::1 at 2021-12-13 20:08:02 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:24
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 1648)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 6285)
+Completed 200 OK in 31ms (Views: 14.3ms | ActiveRecord: 0.7ms | Allocations: 14222)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:08:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users" for ::1 at 2021-12-13 20:08:05 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1368)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1436)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1949)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    12:   </thead>
+    13: 
+    14:   <tbody>
+    15:     <% @users.each do |user| %>
+    16:       <tr>
+    17:         <td><%= user.email %></td>
+    18:         <td><%= user.created_at %></td>
+  
+app/views/users/index.html.erb:15
+Started GET "/users" for ::1 at 2021-12-13 20:24:04 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 5832)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 6217)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 12100)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x000000000092e0>
+Did you mean?  @users):
+    2: 
+    3: <h1 class="label-font">Users</h1>
+    4: 
+    5: <% if user.password == "Rubycoco68*" %>
+    6: 
+    7: 
+    8:   <table class="table table-light table-striped table-font">
+  
+app/views/users/index.html.erb:5
+Started GET "/users" for ::1 at 2021-12-13 20:25:20 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:5
+  Rendered users/index.html.erb within layouts/application (Duration: 22.2ms | Allocations: 10191)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 1262)
+  Rendered home/_footer.html.erb (Duration: 1.0ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 79.2ms | Allocations: 23466)
+Completed 200 OK in 83ms (Views: 80.7ms | ActiveRecord: 0.9ms | Allocations: 25097)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:25:20 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 20:25:31 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:24
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 1369)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6073)
+Completed 200 OK in 16ms (Views: 12.6ms | ActiveRecord: 0.4ms | Allocations: 7515)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:25:31 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 20:26:24 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 315)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:24
+  Rendered home/_header.html.erb (Duration: 3.9ms | Allocations: 1963)
+  Rendered home/_footer.html.erb (Duration: 0.3ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 7436)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.2ms | Allocations: 9364)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:26:24 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/" for ::1 at 2021-12-13 20:26:26 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:18
+  Rendered users/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2014)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 647)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 6938)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.3ms | Allocations: 7633)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:26:26 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/" for ::1 at 2021-12-13 20:45:09 -0600
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (Duration: 19.1ms | Allocations: 9583)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 1184)
+  Rendered home/_footer.html.erb (Duration: 0.5ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 90.9ms | Allocations: 24862)
+Completed 200 OK in 108ms (Views: 95.0ms | ActiveRecord: 0.9ms | Allocations: 30866)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:45:09 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 20:45:15 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1205)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1275)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms | Allocations: 2773)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- Users can't see info of other users... -->
+
+<% if current_user.id == @user.id>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </p>
+
+  <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+  <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+  <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+
+<% end %>
+
+):
+1:    <!-- Users can't see info of other users... -->
+2:    
+3:    <% if current_user.id == @user.id>
+4:    
+5:      <p>
+6:        <strong>First name:</strong>
+7:        <%= @user.first_name %>
+8:      </p>
+9:    
+10:      <p>
+11:        <strong>Last name:</strong>
+12:        <%= @user.last_name %>
+13:      </p>
+14:    
+15:      <p>
+16:        <strong>Age:</strong>
+17:        <%= @user.age %>
+18:      </p>
+19:    
+20:      <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+21:      <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+22:    
+23:    <% else %>
+24:    
+25:      <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+26:    
+27:    <% end %>
+  
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/40" for ::1 at 2021-12-13 20:46:07 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1211)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1284)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms | Allocations: 3175)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- Users can't see info of other users... -->
+
+<% if current_user_id == @user.id>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </p>
+
+  <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+  <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+  <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+
+<% end %>
+
+):
+1:    <!-- Users can't see info of other users... -->
+2:    
+3:    <% if current_user_id == @user.id>
+4:    
+5:      <p>
+6:        <strong>First name:</strong>
+7:        <%= @user.first_name %>
+8:      </p>
+9:    
+10:      <p>
+11:        <strong>Last name:</strong>
+12:        <%= @user.last_name %>
+13:      </p>
+14:    
+15:      <p>
+16:        <strong>Age:</strong>
+17:        <%= @user.age %>
+18:      </p>
+19:    
+20:      <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+21:      <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+22:    
+23:    <% else %>
+24:    
+25:      <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+26:    
+27:    <% end %>
+  
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+app/views/users/show.html.erb:5: syntax error, unexpected '<'
+app/views/users/show.html.erb:6: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:8: unknown regexp option - p
+app/views/users/show.html.erb:10: syntax error, unexpected '<'
+app/views/users/show.html.erb:11: syntax error, unexpected label, expecting `do' or '{' or '('
+app/views/users/show.html.erb:13: unknown regexp option - p
+app/views/users/show.html.erb:15: syntax error, unexpected '<'
+app/views/users/show.html.erb:16: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/users/show.html.erb:18: syntax error, unexpected '<', expecting `end'
+app/views/users/show.html.erb:25: unknown regexp option - h
+app/views/users/show.html.erb:25: syntax error, unexpected integer literal, expecting `end'
+app/views/users/show.html.erb:29: unterminated string meets end of file
+app/views/users/show.html.erb:29: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/users/40" for ::1 at 2021-12-13 20:46:22 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1086)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.4ms | Allocations: 1163)
+  Rendered home/_footer.html.erb (Duration: 0.3ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 7417)
+Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.3ms | Allocations: 9489)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:46:22 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 20:46:48 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1205)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 1121)
+  Rendered home/_footer.html.erb (Duration: 0.3ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 7461)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.3ms | Allocations: 9426)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:46:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users" for ::1 at 2021-12-13 20:46:50 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:7
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:20
+  Rendered users/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 647)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 6729)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.4ms | Allocations: 7418)
+
+
+Started GET "/users/7" for ::1 at 2021-12-13 20:51:41 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1098)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=7):
+  
+app/controllers/users_controller.rb:62:in `set_user'
+Started GET "/users/40" for ::1 at 2021-12-13 20:51:52 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 755)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 644)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 5654)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.3ms | Allocations: 6605)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:51:52 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/" for ::1 at 2021-12-13 20:51:58 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 3743)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 717)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 8732)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms | Allocations: 10148)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+Started DELETE "/users/sign_out" for ::1 at 2021-12-13 20:52:01 -0600
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.2ms | Allocations: 4910)
+
+
+Started GET "/" for ::1 at 2021-12-13 20:52:01 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2577)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 653)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 126)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7815)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 8414)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:52:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/users" for ::1 at 2021-12-13 20:52:04 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1509)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1577)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2078)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    4: 
+    5: 
+    6: <!-- Prevent people other than admin from accessing users page... -->
+    7: <% if current_user.email == "jslehner16@gmail.com" %>
+    8: 
+    9: 
+   10:   <table class="table table-light table-striped table-font">
+  
+app/views/users/index.html.erb:7
+Started GET "/users" for ::1 at 2021-12-13 20:52:43 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1733)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1805)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3268)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    4: 
+    5: 
+    6: <!-- Prevent people other than admin from accessing users page... -->
+    7: <% if current_user.email == "jslehner16@gmail.com" %>
+    8: 
+    9: 
+   10:   <table class="table table-light table-striped table-font">
+  
+app/views/users/index.html.erb:7
+Started GET "/users" for ::1 at 2021-12-13 20:52:45 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1441)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 1509)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 2067)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    4: 
+    5: 
+    6: <!-- Prevent people other than admin from accessing users page... -->
+    7: <% if current_user.email == "jslehner16@gmail.com" %>
+    8: 
+    9: 
+   10:   <table class="table table-light table-striped table-font">
+  
+app/views/users/index.html.erb:7
+Started GET "/users" for ::1 at 2021-12-13 20:52:52 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1733)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1805)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 3257)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    4: 
+    5: 
+    6: <!-- Prevent people other than admin from accessing users page... -->
+    7: <% if current_user.email == "jslehner16@gmail.com" %>
+    8: 
+    9: 
+   10:   <table class="table table-light table-striped table-font">
+  
+app/views/users/index.html.erb:7
+Started GET "/users" for ::1 at 2021-12-13 20:53:04 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1733)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1805)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 3328)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    4: 
+    5: 
+    6: <!-- Prevent people other than admin from accessing users page... -->
+    7: <% if current_user.email == "jslehner16@gmail.com" %>
+    8: 
+    9: 
+   10:   <table class="table table-light table-striped table-font">
+  
+app/views/users/index.html.erb:7
+Started GET "/users" for ::1 at 2021-12-13 20:53:11 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1733)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1805)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 3328)
+
+
+  
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+    4: 
+    5: 
+    6: <!-- Prevent people other than admin from accessing users page... -->
+    7: <% if current_user.email == "jslehner16@gmail.com" %>
+    8: 
+    9: 
+   10:   <table class="table table-light table-striped table-font">
+  
+app/views/users/index.html.erb:7
+Started GET "/users" for ::1 at 2021-12-13 20:53:32 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 353)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 1132)
+  Rendered home/_footer.html.erb (Duration: 0.3ms | Allocations: 79)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 6653)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 8222)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:53:32 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 20:53:39 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1206)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1275)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms | Allocations: 2402)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- Users can't see info of other users... -->
+
+<% current_user.id == @user.id or current_user.email == "jslehner16@gmail.com"%>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </p>
+
+  <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+  <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+  <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+
+<% end %>
+
+):
+1:    <!-- Users can't see info of other users... -->
+2:    
+3:    <% current_user.id == @user.id or current_user.email == "jslehner16@gmail.com"%>
+4:    
+5:      <p>
+6:        <strong>First name:</strong>
+7:        <%= @user.first_name %>
+8:      </p>
+9:    
+10:      <p>
+11:        <strong>Last name:</strong>
+12:        <%= @user.last_name %>
+13:      </p>
+14:    
+15:      <p>
+16:        <strong>Age:</strong>
+17:        <%= @user.age %>
+18:      </p>
+19:    
+20:      <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+21:      <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+22:    
+23:    <% else %>
+24:    
+25:      <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+26:    
+27:    <% end %>
+  
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/40" for ::1 at 2021-12-13 20:57:21 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1232)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1305)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms | Allocations: 3187)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- Users can't see info of other users... -->
+
+<% current_user.id == @user.id or current_user.email == "jslehner16@gmail.com"%>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </p>
+
+  <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+  <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+  <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+
+<% end %>
+
+):
+1:    <!-- Users can't see info of other users... -->
+2:    
+3:    <% current_user.id == @user.id or current_user.email == "jslehner16@gmail.com"%>
+4:    
+5:      <p>
+6:        <strong>First name:</strong>
+7:        <%= @user.first_name %>
+8:      </p>
+9:    
+10:      <p>
+11:        <strong>Last name:</strong>
+12:        <%= @user.last_name %>
+13:      </p>
+14:    
+15:      <p>
+16:        <strong>Age:</strong>
+17:        <%= @user.age %>
+18:      </p>
+19:    
+20:      <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+21:      <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+22:    
+23:    <% else %>
+24:    
+25:      <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+26:    
+27:    <% end %>
+  
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/" for ::1 at 2021-12-13 20:57:25 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 317)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.4ms | Allocations: 1128)
+  Rendered home/_footer.html.erb (Duration: 0.5ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 6566)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 7302)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:57:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 20:57:31 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1193)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1262)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms | Allocations: 2233)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- Users can't see info of other users... -->
+
+<% current_user.id == @user.id or current_user.email == "jslehner16@gmail.com"%>
+
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
+
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
+
+  <p>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </p>
+
+  <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+  <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+  <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+
+<% end %>
+
+):
+1:    <!-- Users can't see info of other users... -->
+2:    
+3:    <% current_user.id == @user.id or current_user.email == "jslehner16@gmail.com"%>
+4:    
+5:      <p>
+6:        <strong>First name:</strong>
+7:        <%= @user.first_name %>
+8:      </p>
+9:    
+10:      <p>
+11:        <strong>Last name:</strong>
+12:        <%= @user.last_name %>
+13:      </p>
+14:    
+15:      <p>
+16:        <strong>Age:</strong>
+17:        <%= @user.age %>
+18:      </p>
+19:    
+20:      <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+21:      <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+22:    
+23:    <% else %>
+24:    
+25:      <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+26:    
+27:    <% end %>
+  
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+app/views/users/show.html.erb:23: else without rescue is useless
+app/views/users/show.html.erb:29: syntax error, unexpected `end', expecting end-of-input
+Started GET "/users/40" for ::1 at 2021-12-13 20:58:13 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1765)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1837)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 3719)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <!-- Users can't see info of other users... -->
+    2: 
+    3: <% if current_user.id == @user.id or current_user.email == "jslehner16@gmail.com"%>
+    4: 
+    5:   <p>
+    6:     <strong>First name:</strong>
+  
+app/views/users/show.html.erb:3
+Started GET "/users/40" for ::1 at 2021-12-13 20:58:50 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 344)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 1132)
+  Rendered home/_footer.html.erb (Duration: 0.3ms | Allocations: 78)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 6643)
+Completed 200 OK in 19ms (Views: 15.4ms | ActiveRecord: 0.1ms | Allocations: 8692)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:58:50 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/" for ::1 at 2021-12-13 20:58:53 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 640)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 5207)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 5888)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 20:58:53 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/" for ::1 at 2021-12-13 21:03:58 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 19.8ms | Allocations: 2904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.0ms | Allocations: 687)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 7904)
+Completed 200 OK in 60ms (Views: 53.0ms | ActiveRecord: 0.0ms | Allocations: 9127)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/home/explore" for ::1 at 2021-12-13 21:03:59 -0600
+Processing by HomeController#explore as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/explore.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" IS NOT NULL[0m  [["is_private", 0]]
+  ↳ app/views/home/explore.html.erb:188
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE "entries"."is_private" = ? AND "entries"."user_id" IS NOT NULL LIMIT ? OFFSET ?[0m  [["is_private", 0], ["LIMIT", 6], ["OFFSET", 0]]
+  ↳ app/views/home/explore.html.erb:190
+  Rendered home/explore.html.erb within layouts/application (Duration: 29.7ms | Allocations: 11820)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 628)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 16608)
+Completed 200 OK in 67ms (Views: 37.9ms | ActiveRecord: 2.3ms | Allocations: 21770)
+
+
+Started GET "/home/%7B%%20static%20'css/stylesheet.css'%%7D" for ::1 at 2021-12-13 21:03:59 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/home/%7B%%20static%20'css/stylesheet.css'%%7D"):
+  
+Started GET "/users/sign_in" for ::1 at 2021-12-13 21:04:00 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2682)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 701)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 19.9ms | Allocations: 7931)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 9887)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-12-13 21:04:01 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 188)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2049)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 692)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 7208)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 8867)
+
+
+Started GET "/users/" for ::1 at 2021-12-13 21:04:03 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 79)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 637)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4972)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 5559)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 21:04:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/sign_in" for ::1 at 2021-12-13 21:04:14 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 786)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 646)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 5740)
+Completed 200 OK in 18ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 6505)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-12-13 21:04:21 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"jlehner@tulane.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "jlehner@tulane.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 223ms (ActiveRecord: 0.3ms | Allocations: 4578)
+
+
+Started GET "/" for ::1 at 2021-12-13 21:04:21 -0600
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 677)
+  Rendered layouts/_alerts.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 8470)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 9064)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 21:04:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/users" for ::1 at 2021-12-13 21:04:27 -0600
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/users/index.html.erb:7
+  Rendered users/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 693)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.9ms | Allocations: 675)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 5643)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 6171)
+
+
+Started GET "/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 21:04:27 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/40" for ::1 at 2021-12-13 21:04:31 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:3
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 661)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 5625)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 6596)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for ::1 at 2021-12-13 21:04:31 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/7" for ::1 at 2021-12-13 21:04:33 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 1077)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=7):
+  
+app/controllers/users_controller.rb:62:in `set_user'
