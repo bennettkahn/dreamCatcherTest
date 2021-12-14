@@ -1,4 +1,5 @@
 class EntriesController < ApplicationController
+
   before_action :set_entry, only: %i[ show edit update destroy ]
   before_action :authenticate_user!, except: [:index, :show]
 
@@ -11,7 +12,7 @@ class EntriesController < ApplicationController
   end
 
   def search
-    @entries = Entry.where("title LIKE ?", "%" + params[:q] + "%")
+    @entries = Entry.where("lower(title) LIKE ?", "%" + params[:q].downcase + "%")
   end
 
   # GET /entries/1 or /entries/1.json
