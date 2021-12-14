@@ -31,15 +31,15 @@
 
   <!-- use radiobutton no checkbox -->
 
-  <div class="field form-group">
-    <%= form.label :is_private, "Private", :value => true  %>
-    <%= form.radio_button :is_private, true %> |
+  <div class="field form-group" id="is_private">
+    <%= form.label :is_private, "Private", :value => true %>
+    <%= form.radio_button :is_private, true, {:class => "is_private is_private_true"} %> |
     <%= form.label :is_private, "Public", :value => false %>
-    <%= form.radio_button :is_private, false %>
+    <%= form.radio_button :is_private, false, {:class => "is_private is_private_false"} %>
   </div>
 
-  <div class="field form-group">
-    <%= form.label :is_anon, "Anonymous", :value => true  %>
+  <div class="field form-group" id="is_anon">
+    <%= form.label :is_anon, "Anonymous", :value => true %>
     <%= form.radio_button :is_anon, true %> |
     <%= form.label :is_anon, "Named", :value => false %>
     <%= form.radio_button :is_anon, false %>
@@ -54,3 +54,11 @@
     <%= form.submit class:"btn btn-secondary"%>
   </div>
 <% end %>
+
+<script>
+  // https://stackoverflow.com/questions/12459574/rails-show-fields-when-radio-button-is-checked
+  $(".is_private").on("change", function(){
+    $("#is_anon").toggle($(this).hasClass("is_private_false"));
+  });
+  
+</script>
