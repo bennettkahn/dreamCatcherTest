@@ -10,6 +10,10 @@ class EntriesController < ApplicationController
     @entries = Entry.all
   end
 
+  def search
+    @entries = Entry.where("title LIKE ?", "%" + params[:q] + "%")
+  end
+
   # GET /entries/1 or /entries/1.json
   def show
   end

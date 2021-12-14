@@ -18599,3 +18599,985 @@ Completed 200 OK in 326ms (Views: 324.6ms | ActiveRecord: 0.0ms | Allocations: 8
   
 ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
   
+Started GET "/" for 127.0.0.1 at 2021-12-13 21:32:22 -0600
+  [1m[35m (5.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20211210064622_add_admin_to_users.rb
+
+
+):
+  
+activerecord (6.1.4.1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4.1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4.1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.4.1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4.1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAdminToUsers (20211210064622)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211210064622"]]
+  [1m[36mTRANSACTION (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-12-13 21:32:50 -0600
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 352.9ms | Allocations: 30552)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 11.7ms | Allocations: 1212)
+  Rendered home/_footer.html.erb (Duration: 1.3ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 473.0ms | Allocations: 42205)
+Completed 200 OK in 509ms (Views: 478.8ms | ActiveRecord: 2.5ms | Allocations: 47881)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:32:51 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+Started GET "/search?q=hello" for 127.0.0.1 at 2021-12-13 21:33:03 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"hello"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 504)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-12-13 21:33:03 -0600
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 2372)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.3ms | Allocations: 700)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 7580)
+Completed 200 OK in 94ms (Views: 66.6ms | ActiveRecord: 0.0ms | Allocations: 15254)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:33:03 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-13 21:33:13 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kelly.romer1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "kelly.romer1@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 9ms (ActiveRecord: 1.1ms | Allocations: 1893)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kelly.romer1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 890)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.1ms | Allocations: 621)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 5974)
+Completed 200 OK in 355ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 7444)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:33:14 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-12-13 21:33:18 -0600
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kelly.romer1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "kelly.romer1@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.2ms | Allocations: 1526)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"kelly.romer1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 774)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 611)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 5697)
+Completed 200 OK in 352ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 6333)
+
+
+Started GET "/users/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:33:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/users/app/assets/stylesheets/application.css"):
+  
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-12-13 21:33:22 -0600
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.7ms | Allocations: 188)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 21.1ms | Allocations: 2053)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 694)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 7230)
+Completed 200 OK in 51ms (Views: 49.2ms | ActiveRecord: 0.0ms | Allocations: 8900)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-12-13 21:33:35 -0600
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"Kelly", "email"=>"kelly.romer1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "kelly.romer1@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "created_at", "updated_at", "email", "encrypted_password") VALUES (?, ?, ?, ?, ?)[0m  [["first_name", "Kelly"], ["created_at", "2021-12-14 03:33:35.846550"], ["updated_at", "2021-12-14 03:33:35.846550"], ["email", "kelly.romer1@gmail.com"], ["encrypted_password", "$2a$12$OfSz5ACB0aN51cZHEx6NQuHogdvGI2OOBpHexCxxf2mfrqHy8G.82"]]
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/search?q=hello
+Completed 302 Found in 359ms (ActiveRecord: 5.1ms | Allocations: 7377)
+
+
+Started GET "/search?q=hello" for 127.0.0.1 at 2021-12-13 21:33:35 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"hello"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.erb within layouts/application
+  [1m[36mEntry Load (0.5ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%hello%')[0m
+  ↳ app/views/entries/search.erb:2
+  Rendered collection of templates [0 times] (Duration: 0.1ms | Allocations: 24)
+  Rendered entries/search.erb within layouts/application (Duration: 4.9ms | Allocations: 869)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 742)
+  Rendered layouts/_alerts.html.erb (Duration: 1.3ms | Allocations: 108)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 6433)
+Completed 200 OK in 50ms (Views: 31.2ms | ActiveRecord: 0.8ms | Allocations: 9816)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:33:36 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 21:33:44 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.erb:2
+  Rendered entries/search.erb within layouts/application (Duration: 28.2ms | Allocations: 6644)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 6712)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 2.4ms | Allocations: 8285)
+
+
+  
+ActionView::Template::Error (Missing partial entries/_entry with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kellyromer/RubymineProjects/dreamCatcherTest__/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/devise-4.8.0/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    1: <h1>Search Results</h1>
+    2: <%= render @entries %>
+  
+app/views/entries/search.erb:2
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 21:36:10 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.erb within layouts/application
+  [1m[36mEntry Load (0.4ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.erb:2
+  Rendered entries/search.erb within layouts/application (Duration: 2.4ms | Allocations: 1627)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1695)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms | Allocations: 3165)
+
+
+  
+ActionView::Template::Error (Missing partial entries/_entry with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kellyromer/RubymineProjects/dreamCatcherTest__/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/devise-4.8.0/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    1: <h1>Search Results</h1>
+    2: <%= render @entries %>
+  
+app/views/entries/search.erb:2
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 21:36:13 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.erb within layouts/application
+  [1m[36mEntry Load (1.0ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.erb:2
+  Rendered entries/search.erb within layouts/application (Duration: 6.2ms | Allocations: 1624)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1692)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.4ms | Allocations: 3161)
+
+
+  
+ActionView::Template::Error (Missing partial entries/_entry with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kellyromer/RubymineProjects/dreamCatcherTest__/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/devise-4.8.0/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    1: <h1>Search Results</h1>
+    2: <%= render @entries %>
+  
+app/views/entries/search.erb:2
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 21:43:06 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.4ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered entries/search.html.erb within layouts/application (Duration: 10.4ms | Allocations: 2187)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2259)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 3.5ms | Allocations: 5612)
+
+
+  
+ActionView::Template::Error (Missing partial entries/_entry with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kellyromer/RubymineProjects/dreamCatcherTest__/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/devise-4.8.0/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    1: <h1>Search Results</h1>
+    2: <%= render @entries %>
+  
+app/views/entries/search.html.erb:2
+Started GET "/" for 127.0.0.1 at 2021-12-13 21:43:24 -0600
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 156.8ms | Allocations: 18440)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 10.4ms | Allocations: 1267)
+  Rendered home/_footer.html.erb (Duration: 2.7ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 204.1ms | Allocations: 25280)
+Completed 200 OK in 261ms (Views: 215.6ms | ActiveRecord: 2.7ms | Allocations: 30575)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:43:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 21:43:32 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered entries/search.html.erb within layouts/application (Duration: 20.1ms | Allocations: 6941)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 7013)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.2ms | Allocations: 10587)
+
+
+  
+ActionView::Template::Error (Missing partial entries/_entry with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kellyromer/RubymineProjects/dreamCatcherTest__/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/devise-4.8.0/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    1: <h1>Search Results</h1>
+    2: <%= render @entries %>
+  
+app/views/entries/search.html.erb:2
+Started GET "/" for 127.0.0.1 at 2021-12-13 21:48:30 -0600
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 322.3ms | Allocations: 17648)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 12.9ms | Allocations: 1258)
+  Rendered home/_footer.html.erb (Duration: 2.7ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 399.1ms | Allocations: 24400)
+Completed 200 OK in 483ms (Views: 425.7ms | ActiveRecord: 1.9ms | Allocations: 30797)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:48:30 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 21:48:38 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+DEPRECATION WARNING: Rendering actions with '.' in the name is deprecated: entries/search.html.erb (called from block (2 levels) in search at /Users/kellyromer/RubymineProjects/dreamCatcherTest__/app/controllers/entries_controller.rb:16)
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered entries/search.html.erb within layouts/application (Duration: 17.8ms | Allocations: 6941)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 7013)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.3ms | Allocations: 10833)
+
+
+  
+ActionView::Template::Error (Missing partial entries/_entry with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/kellyromer/RubymineProjects/dreamCatcherTest__/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/devise-4.8.0/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actiontext-6.1.4.1/app/views"
+  * "/Users/kellyromer/.rvm/gems/ruby-3.0.2/gems/actionmailbox-6.1.4.1/app/views"
+):
+    1: <h1>Search Results</h1>
+    2: <%= render @entries %>
+  
+app/views/entries/search.html.erb:2
+app/controllers/entries_controller.rb:16:in `block (2 levels) in search'
+app/controllers/entries_controller.rb:15:in `search'
+Started GET "/" for 127.0.0.1 at 2021-12-13 21:55:59 -0600
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 174.9ms | Allocations: 17650)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 45.6ms | Allocations: 1258)
+  Rendered home/_footer.html.erb (Duration: 1.9ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 306.1ms | Allocations: 24391)
+Completed 200 OK in 362ms (Views: 317.9ms | ActiveRecord: 3.1ms | Allocations: 29039)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:56:00 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream1.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream0.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream2.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream3.jpeg"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/dream4.jpeg"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 21:56:05 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (1.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.erb [1 times] (Duration: 0.8ms | Allocations: 107)
+  Rendered entries/search.html.erb within layouts/application (Duration: 31.8ms | Allocations: 5821)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 733)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 11079)
+Completed 200 OK in 71ms (Views: 51.5ms | ActiveRecord: 3.7ms | Allocations: 14691)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 21:56:05 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:02:07 -0600
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (1.6ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 5.0ms | Allocations: 2307)
+  Rendered entries/search.html.erb within layouts/application (Duration: 46.5ms | Allocations: 8879)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 9926)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 5.2ms | Allocations: 25161)
+
+
+  
+ActionView::Template::Error (undefined method `is_private' for nil:NilClass):
+    4: <p>
+    5:   <i>
+    6:     Dream is
+    7:     <% if @entry.is_private == true %>
+    8:       private
+    9:     <% else %>
+   10:       public
+  
+app/views/entries/_entry.html.erb:7
+app/views/entries/search.html.erb:2
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:02:20 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.4ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 1.1ms | Allocations: 255)
+  Rendered entries/search.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.6ms | Allocations: 1275)
+  Rendered home/_footer.html.erb (Duration: 0.8ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 105.2ms | Allocations: 14568)
+Completed 200 OK in 117ms (Views: 112.7ms | ActiveRecord: 0.6ms | Allocations: 17300)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:02:21 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-13 22:08:31 -0600
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:3
+  Rendered home/index.html.erb within layouts/application (Duration: 641.0ms | Allocations: 32893)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 10.9ms | Allocations: 1243)
+  Rendered home/_footer.html.erb (Duration: 2.5ms | Allocations: 83)
+  Rendered layout layouts/application.html.erb (Duration: 715.1ms | Allocations: 43953)
+Completed 200 OK in 797ms (Views: 724.9ms | ActiveRecord: 10.1ms | Allocations: 48621)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:08:32 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:08:34 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (2.1ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 2.9ms | Allocations: 280)
+  Rendered entries/search.html.erb within layouts/application (Duration: 28.6ms | Allocations: 5958)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 732)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered layout layouts/application.html.erb (Duration: 43.4ms | Allocations: 11210)
+Completed 200 OK in 64ms (Views: 46.2ms | ActiveRecord: 4.9ms | Allocations: 14839)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:08:34 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:08:46 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 3.5ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 62.0ms | Allocations: 14504)
+Completed 200 OK in 67ms (Views: 62.6ms | ActiveRecord: 0.7ms | Allocations: 16132)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:08:46 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:09:00 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.4ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 3.8ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 14943)
+Completed 200 OK in 64ms (Views: 57.0ms | ActiveRecord: 0.7ms | Allocations: 16479)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:09:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:09:10 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.4ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 3.6ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 64.2ms | Allocations: 13890)
+Completed 200 OK in 73ms (Views: 66.1ms | ActiveRecord: 0.8ms | Allocations: 15418)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:09:10 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:09:19 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (1.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 4.5ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 15310)
+Completed 200 OK in 72ms (Views: 66.7ms | ActiveRecord: 1.5ms | Allocations: 16823)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:09:19 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:09:25 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.3ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 7.6ms | Allocations: 648)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 13457)
+Completed 200 OK in 68ms (Views: 61.4ms | ActiveRecord: 0.4ms | Allocations: 14976)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:09:25 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:10:48 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 3.9ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 59.4ms | Allocations: 14355)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 0.5ms | Allocations: 15883)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:10:48 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:11:33 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.7ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.5ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 5.9ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.2ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 15697)
+Completed 200 OK in 78ms (Views: 71.9ms | ActiveRecord: 0.9ms | Allocations: 17220)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:11:33 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:11:43 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.5ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 3.5ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.7ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.4ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 66.4ms | Allocations: 15725)
+Completed 200 OK in 74ms (Views: 67.3ms | ActiveRecord: 0.7ms | Allocations: 17245)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:11:44 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:11:54 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.5ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 7.0ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.3ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 60.4ms | Allocations: 14431)
+Completed 200 OK in 68ms (Views: 61.0ms | ActiveRecord: 1.3ms | Allocations: 15938)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:11:54 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:12:01 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.1ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 1.5ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.8ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 48.2ms | Allocations: 13900)
+Completed 200 OK in 53ms (Views: 49.1ms | ActiveRecord: 0.3ms | Allocations: 15421)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:12:01 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:12:16 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (1.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 4.0ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.9ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 71.4ms | Allocations: 14348)
+Completed 200 OK in 77ms (Views: 70.9ms | ActiveRecord: 2.4ms | Allocations: 15868)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:12:16 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:12:31 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 2.9ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.5ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | Allocations: 14360)
+Completed 200 OK in 69ms (Views: 63.4ms | ActiveRecord: 0.6ms | Allocations: 15885)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:12:31 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:12:38 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.1ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 2.3ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 15726)
+Completed 200 OK in 63ms (Views: 56.1ms | ActiveRecord: 0.9ms | Allocations: 17233)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:12:38 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:12:50 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.1ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 1.8ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.7ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 60.8ms | Allocations: 15313)
+Completed 200 OK in 65ms (Views: 61.3ms | ActiveRecord: 0.4ms | Allocations: 16831)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:12:50 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:13:02 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.6ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.8ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 4.8ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.2ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 14368)
+Completed 200 OK in 74ms (Views: 67.5ms | ActiveRecord: 0.8ms | Allocations: 15887)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:13:02 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:13:11 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.6ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.2ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 4.6ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 66.8ms | Allocations: 17138)
+Completed 200 OK in 73ms (Views: 67.1ms | ActiveRecord: 0.8ms | Allocations: 18656)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:13:11 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:13:17 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.2ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.1ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 1.8ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.4ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 14824)
+Completed 200 OK in 64ms (Views: 59.7ms | ActiveRecord: 0.4ms | Allocations: 16332)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:13:17 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:13:28 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (1.9ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.3ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 7.8ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.3ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 62.9ms | Allocations: 14338)
+Completed 200 OK in 71ms (Views: 63.1ms | ActiveRecord: 2.1ms | Allocations: 15846)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:13:28 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
+Started GET "/search?q=flappy" for 127.0.0.1 at 2021-12-13 22:13:34 -0600
+Processing by EntriesController#search as HTML
+  Parameters: {"q"=>"flappy"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering entries/search.html.erb within layouts/application
+  [1m[36mEntry Load (0.3ms)[0m  [1m[34mSELECT "entries".* FROM "entries" WHERE (title LIKE '%flappy%')[0m
+  ↳ app/views/entries/search.html.erb:2
+  Rendered collection of entries/_entry.html.erb [1 times] (Duration: 0.3ms | Allocations: 22)
+  Rendered entries/search.html.erb within layouts/application (Duration: 8.5ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.4ms | Allocations: 669)
+  Rendered home/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 15276)
+Completed 200 OK in 72ms (Views: 67.0ms | ActiveRecord: 0.5ms | Allocations: 16809)
+
+
+Started GET "/app/assets/stylesheets/application.css" for 127.0.0.1 at 2021-12-13 22:13:34 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/stylesheets/application.css"):
+  
