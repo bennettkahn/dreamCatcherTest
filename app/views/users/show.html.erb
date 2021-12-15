@@ -1,18 +1,28 @@
+<!-- Users can't see info of other users... -->
+<!-- Still need to handle the case where we type a user ID into the URL bar that doesn't exist... -->
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<% if current_user != nil and (current_user.id == @user.id or current_user.email == "jslehner16@gmail.com")%>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
+  <p>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
+  </p>
 
-<p>
-  <strong>Age:</strong>
-  <%= @user.age %>
-</p>
+  <p>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
+  </p>
 
-<!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
-<%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+  <p>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </p>
+
+  <!-- <%= link_to 'Edit', edit_user_path(@user), class:"btn btn-secondary" %> | -->
+  <%= link_to 'Back', users_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+  <h1 style="text-align: center;">You are not permitted access to this page...</h1>
+
+<% end %>

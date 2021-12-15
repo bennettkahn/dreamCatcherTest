@@ -1,6 +1,7 @@
 class EntriesController < ApplicationController
+
   before_action :set_entry, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, except: [:index, :show]
+  before_action :authenticate_user!, except: [:index, :show, :search]
 
   #Adding "before" action to only allow users to edit/update/destroy their own entries...
   before_action :correct_user, only: [:edit, :update, :destroy]
@@ -11,7 +12,7 @@ class EntriesController < ApplicationController
   end
 
   def search
-    @entries = Entry.where("title LIKE ?", "%" + params[:q] + "%")
+    @entries = Entry.where(is_private: false).where("lower(title) LIKE ?", "%" + params[:q].downcase + "%")
   end
 
   # GET /entries/1 or /entries/1.json

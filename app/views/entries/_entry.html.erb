@@ -1,19 +1,13 @@
 <div class="search-result-title"><%= entry.title %></div>
-
 <div class="search-result-body"><%= entry.description %></div>
 <div class="search-result-anon">
 <p>
   <i>
-    Dream is
-    <% if entry.is_private == true %>
-      private
-    <% else %>
-      public
-      <% if entry.is_anon == true %>
-        and anonymous
-      <% else %>
+    <% if user_signed_in? %>
+    Dream is public
+      <% if entry.is_anon != true %>
         and written by
-        <%= entry.user_id %>
+      <%= entry.get_explore_name true %>
       <% end %>
     <% end %>
   </i>
