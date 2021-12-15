@@ -22,10 +22,6 @@
   </p>
 </div>
 
-<% if @entry.user == current_user %>
-  <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %> |
-<% end %>
-
 <!-- PUT LOGIC IN CONTROLLER OR SOMETHING -->
 <!-- single button line that grabs the correct pathing, if possible -->
 <!-- pass in @entry.user and current_user as arguments -->
@@ -44,4 +40,8 @@
 
   <%= link_to 'Back', home_explore_path, class:"btn btn-secondary" %>
 
+<% end %>
+
+<% if @entry.user == current_user %>
+  | <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %>
 <% end %>
