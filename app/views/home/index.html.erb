@@ -1,52 +1,3 @@
-<br>
-
-<% if user_signed_in? and current_user.first_name != "" %>
-  <h1 class="label-font" style="text-align: center;">
-    Welcome to Dreamcatcher, <%= current_user.first_name %>!
-  </h1>
-<% else %>
-  <h1 class="label-font" style="text-align: center;">
-    Welcome to Dreamcatcher!
-  </h1>
-<% end %>
-
-<div class = "blockquote about-spill" id="about-animation">
-    <div class = "description rounded">
-      <p>
-        Here at Dreamcatcher, we believe in the power and importance of dreams.
-		What you see in your dreams is often a manifestation of what is happening in your life.
-		Understanding and interpreting your dreams is a powerful feeling that can lead to clarity and happiness.
-		Most people dream but often forget them in a matter of hours.
-      </p>
-      <hr>
-      <p>
-        By providing users with a platform to log their dreams, Dreamcatcher aims to help people reminisce those nighttime stories.
-		With a clear record of your dreams, users are able to reflect on dreams of weeks or months past and hopefully notice patterns.
-		Users may also explore and see what others are dreaming about.
-		Our mission is to spread the word about the importance of dreams and help users understand their subconscious.
-      </p>
-    </div>
-
-<script type="text/javascript">
-
-var images = new Array();
-
-function preloadImages(){
-
-    for (i=0; i < preloadImages.arguments.length; i++){
-
-         images[i] = new Image();
-
-        images[i].src = preloadImages.arguments[i];
-
-    }
-
-}
-
-preloadImages("../../assets/images/dream0.jpeg", "../../assets/images/dream1.jpeg", "../../assets/images/dream2.jpeg", "../../assets/images/dream3.jpeg", "../../assets/images/dream4.jpeg");
-
-</script>
-
 <head>
   <style>
     .carousel .carousel-item {
@@ -79,52 +30,94 @@ preloadImages("../../assets/images/dream0.jpeg", "../../assets/images/dream1.jpe
     #dream-4 img {
       width: 700px;
     }
-    </style>
+    #bold {
+      color: #5A4181;
+    }
+  </style>
 </head>
 
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style="padding-top: 50px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">
+<br>
+
+<% if user_signed_in? and current_user.first_name != "" %>
+  <h1 class="label-font" style="text-align: center;">
+    Welcome to Dreamcatcher, <%= current_user.first_name %>!
+  </h1>
+<% else %>
+  <h1 class="label-font" style="text-align: center;">
+    Welcome to Dreamcatcher!
+  </h1>
+<% end %>
+
+<div class = "blockquote about-spill" id="about-animation">
+  <div class = "description rounded">
+    <p>
+      Here at Dreamcatcher, we believe in the power and importance of dreams.<br>
+		  What you see in your dreams is often a manifestation of what is happening in your life. Understanding and interpreting your dreams is a powerful feeling that can lead to clarity and happiness.<br>
+		  Most people dream but often forget them in a matter of hours.
+    </p>
+    <hr>
+    <p>
+      By providing users with a platform to log their dreams, Dreamcatcher aims to help people reminisce those nighttime stories.With a clear record of your dreams, users are able to reflect on dreams of weeks or months past and hopefully notice patterns.<br>
+		  Users may also explore and see what others are dreaming about.<br>
+		  Our mission is to spread the word about the importance of dreams and help users understand their subconscious.
+    </p>
+    <% if !user_signed_in? %>
+      <hr>
+      <p>
+        <strong id="bold">Sign in</strong> or <strong id="bold">Sign Up</strong> to log your own dreams and see what others are dreaming about!
+      </p>
+    <% end %>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3000" style="padding-top: 50px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">
     <ol class="carousel-indicators carousel-fix">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel-fix"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active carousel-fix"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active carousel-fix"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active carousel-fix"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active carousel-fix"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active carousel-fix"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active carousel-fix"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active carousel-fix"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active carousel-fix"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active carousel-fix"></li>
     </ol>
     <div class="carousel-inner">
-        <div class="carousel-item active" data-interval="2000">
-          <div class="d-flex justify-content-center" id="dream-0">
+      <div class="carousel-item active" data-interval="2000">
+        <div class="d-flex justify-content-center" id="dream-0">
+          <figure>
             <img class="d-block w-65" src="<%= image_path('dream0.jpg') %>" alt="Person sleeping on bed">
-          </div>
+          </figure>
         </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center" id="dream-1">
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center" id="dream-1">
+          <figure>
             <img class="d-block w-65" src="<%= image_path('dream1.jpg') %>" alt="Person sleeping in hammock in the clouds">
-          </div>
+          </figure>
         </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center" id="dream-2">
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center" id="dream-2">
+          <figure>
             <img class="d-block w-65" src="<%= image_path('dream2.jpg') %>" alt="Outline of child in a star-filled sky">
-          </div>
+          </figure>
         </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center" id="dream-3">
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center" id="dream-3">
+          <figure>
             <img class="d-block w-65" src="<%= image_path('dream3.jpg') %>" alt="Child sleeping, clutching a stuffed bear">
-          </div>
+          </figure>
         </div>
-        <div class="carousel-item">
-          <div class="d-flex justify-content-center" id="dream-4">
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center" id="dream-4">
+          <figure>
             <img class="d-block w-65" src="<%= image_path('dream4.jpg') %>" alt="Person rowing a boat over the clouds into a starry distance">
-          </div>
+          </figure>
         </div>
+      </div>
     </div>
-
-</div>
-
   </div>
+</div>
