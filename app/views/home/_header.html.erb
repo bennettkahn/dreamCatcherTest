@@ -60,16 +60,16 @@
                 const time = new Date().getHours();
                 let greeting;
                 if (time < 11){
-                    greeting = "Good morning, ";
+                    greeting = "Good morning , ";
                 }
                 else if (time < 16){
-                    greeting = "Good afternoon, ";
+                    greeting = "Good afternoon , ";
                 }
                 else {
-                    greeting = "Good evening, ";
+                    greeting = "Good evening , ";
                 }
                 document.write(greeting)
-            </script>, <%= current_user.first_name %>
+            </script> <%= current_user.first_name %>
           </li>
         </ul>
 
