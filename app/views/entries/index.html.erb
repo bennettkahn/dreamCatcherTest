@@ -94,24 +94,22 @@ a.fill-div {
 
   <div class="container">
   <%= month_calendar(attribute: :created_at, events: @entries) do |date, entries| %>
-    <div class="calendarCell">
+    <div class="calendarCell" style="overflow-y:auto">
       <div class="dateText">
         <h5 class="dateHeader">  <strong><%= date %> </strong></h5>
       </div>
      
     
-      <% counter = 0 %>
       <% entries.each do |entry| %>
         <% if entry.user == current_user %>
           <div class="housecard">
             <div class="card">
 
-                <h5> <%= entry.title[0, 15] %>      <%= link_to image_tag('eye.png', alt: "View Dream"), entry %>  </h5>
+                <h5> <%= entry.title[0, 7] %>... <%= link_to image_tag('eye.png', alt: "View Dream"), entry %>  </h5>
               
             </div>
           </div>
         <% end %>
-        <% counter += 1 %>
       <% end %>
     </div>
   <% end %>
