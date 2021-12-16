@@ -12,7 +12,7 @@ class EntriesController < ApplicationController
   end
 
   def search
-    @entries = Entry.where(is_private: false).where("lower(title) LIKE ?", "%" + params[:q].downcase + "%")
+    @pag_entries = Entry.where(is_private: false).where("lower(title) LIKE ?", "%" + params[:q].downcase + "%").paginate(page: params[:page], per_page: 4)
   end
 
   # GET /entries/1 or /entries/1.json

@@ -1,3 +1,7 @@
-<div class = "search-results-header">Search Results</div>
-<%= render @entries %>
+<div class = "search-results-header rounded">Search Results</div>
+<br>
+<%= will_paginate @pag_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
+<%= render @pag_entries %>
+
+<%= will_paginate @pag_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
 <br>
