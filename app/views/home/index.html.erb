@@ -1,3 +1,24 @@
+
+<script type="text/javascript">
+
+var images = new Array();
+
+function preloadImages(){
+
+    for (i=0; i < preloadImages.arguments.length; i++){
+
+         images[i] = new Image();
+
+        images[i].src = preloadImages.arguments[i];
+
+    }
+
+}
+
+preloadImages("../../assets/images/dream0.jpeg", "../../assets/images/dream1.jpeg", "../../assets/images/dream2.jpeg", "../../assets/images/dream3.jpeg", "../../assets/images/dream4.jpeg");
+
+</script>
+
 <head>
   <style>
     .carousel .carousel-item {
@@ -32,11 +53,13 @@
     }
     #bold {
       color: #5A4181;
+      text-decoration: none;"
     }
   </style>
 </head>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -54,7 +77,7 @@
 <% end %>
 
 <div class = "blockquote about-spill" id="about-animation">
-  <div class = "description rounded slow-grow" style = "padding-left: 100px; padding-right: 100px;">
+  <div class = "description rounded" style = "padding-left: 100px; padding-right: 100px;">
     <p>
       Here at Dreamcatcher, we believe in the power and importance of dreams.<br>
 		  What you see in your dreams is often a manifestation of what is happening in your life. Understanding and interpreting your dreams is a powerful feeling that can lead to clarity and happiness.<br>
@@ -62,14 +85,21 @@
     </p>
     <hr>
     <p>
-      By providing users with a platform to log their dreams, Dreamcatcher aims to help people reminisce those nighttime stories.With a clear record of your dreams, users are able to reflect on dreams of weeks or months past and hopefully notice patterns.<br>
-		  Users may also explore and see what others are dreaming about.<br>
+      By providing users with a platform to log their dreams,<br>Dreamcatcher aims to help people reminisce those nighttime stories.<br>
+      With a clear record of your dreams, users are able to reflect on dreams of weeks or months past and hopefully notice patterns. Users may also explore and see what others are dreaming about.<br>
 		  Our mission is to spread the word about the importance of dreams and help users understand their subconscious.
     </p>
     <% if !user_signed_in? %>
       <hr>
       <p>
-        <strong id="bold">Sign in</strong> or <strong id="bold">Sign Up</strong> to log your own dreams and see what others are dreaming about!
+        <strong id="bold">
+          <%= link_to 'Sign In', new_user_session_path, id:"bold" %>
+        </strong>
+        or 
+        <strong id="bold">
+          <%= link_to 'Sign Up', new_user_registration_path, id:"bold" %>
+        </strong>
+        to log your own dreams and see what others are dreaming about!
       </p>
     <% end %>
   </div>

@@ -22,12 +22,6 @@
   </p>
 </div>
 
-<% if @entry.user == current_user %>
-  <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %>
-
-  <!-- Added "Delete" button...
-  <%= link_to 'Delete', @entry, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-secondary" %>
-<% end %>
 
 <!-- PUT LOGIC IN CONTROLLER OR SOMETHING -->
 <!-- single button line that grabs the correct pathing, if possible -->
@@ -47,4 +41,14 @@
 
   <%= link_to 'Back', home_explore_path, class:"btn btn-secondary" %>
 
+<% end %>
+
+<% if @entry.user == current_user %>
+  | <%= link_to 'Edit', edit_entry_path(@entry), class:"btn custom-btn" %>
+<% end %>
+
+<% if @entry.user == current_user %>
+
+  <!-- Added "Delete" button... -->
+  | <%= link_to 'Delete', @entry, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
 <% end %>

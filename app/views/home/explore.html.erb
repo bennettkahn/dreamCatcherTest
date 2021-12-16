@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Explore</title>
   <!--Bootstrap CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!--Custom CSS-->
   <link rel="stylesheet" href="{% static 'css/stylesheet.css'%}" type="text/css">
 </head>
+
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -19,18 +21,24 @@
 <!-- Stylesheet for enhance explore page -->
 
 <style>
+  
 body {
   font-family: 'Raleway', sans-serif;
-  background-color: #8186a3;
+  /*background-color: #8186a3;*/
+}
+
+#explore-body{
+  padding-right: 0px !Important;
+  padding-left: 0px !Important;
+  margin-right: 0px !Important;
+  margin-left: 0px !Important;
+  border-right: 0px !Important;
+  border-left: 0px !Important;
 }
 
 .contenedor {
   height: 100%;
   padding: 5% 0;
-}
-
-h1 {
-  color: #FCFBFA;
 }
 
 .container_foto {
@@ -142,8 +150,6 @@ h1 {
   left: 3;
 }
 
-/* PAGINATION */
-
 .pagination > li > a
 {
     background-color: white;
@@ -181,16 +187,18 @@ h1 {
 
 </style>
 
+
+
 <h1 class="label-font">Explore</h1>
 
-<div class="album text-muted">
-   <div class="container-fluid contenedor text-center">
+<div class="album text-muted" id="explore-body">
+  <div class="container-fluid contenedor text-center">
     <%= will_paginate @public_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
       <div class="row row-cols-5">
         <% @public_entries.each do |entry| %>
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto " >
             <div class="ver_mas text-center" >
-              <span  class="lnr lnr-eye">  View Dream <%= link_to image_tag('eye.png', alt: "View Dream"), entry %> </span>
+              <span class="lnr lnr-eye">  View Dream <%= link_to image_tag('eye.png', alt: "View Dream"), entry %> </span>
             </div>
             <article class="text-left">
               <h2>
@@ -205,8 +213,7 @@ h1 {
           </div>
         <% end %>
       </div>  
-      <%= will_paginate @public_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
-   </div>
+    <%= will_paginate @public_entries, renderer: WillPaginate::ActionView::BootstrapLinkRenderer, list_classes: %w(pagination) %>
+  </div>
 </div>
 
-<br>
