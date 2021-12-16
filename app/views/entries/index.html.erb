@@ -4,7 +4,7 @@
 
 <br>
 
-<%= link_to 'New Entry', new_entry_path, class:"btn btn-secondary" %>
+<%= link_to 'New Dream', new_entry_path, class:"btn custom-btn" %>
 
 <br> 
 
@@ -18,15 +18,13 @@
   padding-bottom: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
+  opacity: .93;
 }
 
 
 
 body{
   font-family: 'Nunito', sans-serif;
-  padding: 5px;
-
-
 }
 .card{
   border-radius: 4px;
@@ -54,7 +52,6 @@ body{
 
 .card h5 {
   padding-top: -10px;
-  
   font-size: 20px;
 }
 
@@ -99,30 +96,28 @@ a.fill-div {
 
 <div class="myclass">
 
-<div class="container">
-<%= month_calendar(attribute: :created_at, events: @entries) do |date, entries| %>
-  <div class="calendarCell">
-    <div class="dateText">
-      <h5 class="dateHeader">  <strong><%= date %> </strong></h5>
-    </div>
-   
-  
-    <% counter = 0 %>
-    <% entries.each do |entry| %>
-      <% if entry.user == current_user && counter < 4%>
-        <div class="housecard">
-          <div class="card">
+  <div class="container">
+  <%= month_calendar(attribute: :created_at, events: @entries) do |date, entries| %>
+    <div class="calendarCell" style="overflow-y:auto">
+      <div class="dateText">
+        <h5 class="dateHeader">  <strong><%= date %> </strong></h5>
+      </div>
+     
+    
+      <% entries.each do |entry| %>
+        <% if entry.user == current_user %>
+          <div class="housecard">
+            <div class="card">
 
-              <h5> <%= entry.title[0, 15] %>      <%= link_to image_tag('eye.png', alt: "View Dream"), entry %>  </h5>
-            
+                <h5> <%= entry.title[0, 7] %>... <%= link_to image_tag('eye.png', alt: "View Dream"), entry %>  </h5>
+              
+            </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
-      <% counter += 1 %>
-    <% end %>
-  </div>
-<% end %>
+    </div>
+  <% end %>
 
-</div>
+  </div>
 
 </div>

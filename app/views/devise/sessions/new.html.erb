@@ -1,3 +1,11 @@
+<style>
+  .custom-btn {
+    background-color: #5A4181 !Important;
+    border-color: #5A4181 !Important;
+    color: whitesmoke;
+  }
+</style>
+
 <h2 class="label-font">Sign in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -24,7 +32,7 @@
     <br>
 
     <div class="actions">
-      <%= f.submit "Log in", class:"btn btn-primary"%>
+      <%= f.submit "Log in", class:"btn custom-btn"%>
     </div>
   </div>
 <% end %>

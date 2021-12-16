@@ -1,71 +1,89 @@
 <style>
-  .nav-color {
-    color: white;
-  }
+#search-btn {
+  border-color: #5A4181 !Important;
+}
+
+#header-main{
+  padding-right: 15px !Important;
+  padding-left: 15px !Important;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !Important;
+}
 </style>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top header" id="header-main">
+    <div class="container-fluid">
+      <!-- Customized size of logo button... -->
+      <%= link_to image_tag('logo.png', :size => "75x55"), root_path, class:"navbar-brand" %>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse table-font" id="navbarSupportedContent" style="font-family:  Indie Flower !important;" >
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top header">
-  <div class="container-fluid">
-
-    <!-- Customized size of logo button... -->
-    <%= link_to image_tag('logo.png', :size => "75x55"), root_path, class:"navbar-brand" %>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse table-font" id="navbarSupportedContent" style="font-family:  Indie Flower !important;" >
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <% colors_dict = ApplicationRecord.get_colors_dict request.path %>
-
-        <li class="nav-item">
-          <%= link_to 'Explore', home_explore_path, class:"nav-link", style:"color: #{colors_dict["explore"]};" %>
-        </li>
-
-        <% if user_signed_in? %>
+          <% colors_dict = ApplicationRecord.get_colors_dict request.path %>
 
           <li class="nav-item">
-            <%= link_to 'My Dreams', entries_path, class:"nav-link", style:"color: #{colors_dict["mine"]};" %>
+            <%= link_to 'Explore', home_explore_path, class:"nav-link", style:"color: #{colors_dict["explore"]};" %>
           </li>
 
-          <li class="nav-item">
-            <%= link_to 'New Dream', new_entry_path, class:"nav-link", style:"color: #{colors_dict["new"]};" %>
-          </li>
+          <% if user_signed_in? %>
 
-          <li class="nav-item">
-            <%= link_to 'Edit Profile', edit_user_registration_path, class:"nav-link", style:"color: #{colors_dict["edit"]};" %>
-          </li>
+            <li class="nav-item">
+              <%= link_to 'My Dreams', entries_path, class:"nav-link", style:"color: #{colors_dict["mine"]};" %>
+            </li>
 
-          <li class="nav-item">
-            <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"nav-link" %>
-          </li>
+            <li class="nav-item">
+              <%= link_to 'New Dream', new_entry_path, class:"nav-link", style:"color: #{colors_dict["new"]};" %>
+            </li>
 
-        <% else %>
+            <li class="nav-item">
+              <%= link_to 'Edit Profile', edit_user_registration_path, class:"nav-link", style:"color: #{colors_dict["edit"]};" %>
+            </li>
 
-          <li class="nav-item">
-            <%= link_to 'Sign In', new_user_session_path, class:"nav-link", style:"color: #{colors_dict["in"]};" %>
-          </li>
-          
-          <li class="nav-item">
-            <%= link_to 'Sign Up', new_user_registration_path, class:"nav-link", style:"color: #{colors_dict["up"]};" %>
-          </li>
+            <li class="nav-item">
+              <%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class:"nav-link" %>
+            </li>
 
-        <% end %>
-      </ul>
+          <% else %>
 
-      <% if user_signed_in? and current_user.first_name != "" %>
+            <li class="nav-item">
+              <%= link_to 'Sign In', new_user_session_path, class:"nav-link", style:"color: #{colors_dict["in"]};" %>
+            </li>
+            
+            <li class="nav-item">
+              <%= link_to 'Sign Up', new_user_registration_path, class:"nav-link", style:"color: #{colors_dict["up"]};" %>
+            </li>
 
-        <ul class="navbar-nav mb-3 mb-lg-0">
-          <li class="nav-item" style="font-size: 25px; color: whitesmoke; padding-right: 15px;">
-            Hello, <%= current_user.first_name %>
-          </li>
+          <% end %>
         </ul>
 
-      <% end %>
+        <% if user_signed_in? and current_user.first_name != "" %>
 
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+          <ul class="navbar-nav mb-3 mb-lg-0">
+            <li class="nav-item" style="font-size: 25px; color: whitesmoke; padding-right: 15px;">
+              <script>
+                  const time = new Date().getHours();
+                  let greeting;
+                  if (time < 12){
+                      greeting = "Good morning , ";
+                  }
+                  else if (time < 17){
+                      greeting = "Good afternoon , ";
+                  }
+                  else {
+                      greeting = "Good evening , ";
+                  }
+                  document.write(greeting)
+              </script> <%= current_user.first_name %>
+            </li>
+          </ul>
+        <% end %>
+
+      <form class="d-flex" action="/search">
+        <input class="form-control me-2" name="q" type="search" placeholder="Find a Dream..." aria-label="Search">
+        <button class="btn btn-header" id="search-btn" type="submit">Search</button>
       </form>
+
     </div>
-  </div>
-</nav>
+  </nav>
+</header>
