@@ -22,6 +22,7 @@
   </p>
 </div>
 
+
 <!-- PUT LOGIC IN CONTROLLER OR SOMETHING -->
 <!-- single button line that grabs the correct pathing, if possible -->
 <!-- pass in @entry.user and current_user as arguments -->
@@ -43,5 +44,11 @@
 <% end %>
 
 <% if @entry.user == current_user %>
-  | <%= link_to 'Edit', edit_entry_path(@entry), class:"btn btn-secondary" %>
+  | <%= link_to 'Edit', edit_entry_path(@entry), class:"btn custom-btn" %>
+<% end %>
+
+<% if @entry.user == current_user %>
+
+  <!-- Added "Delete" button... -->
+  | <%= link_to 'Delete', @entry, method: :delete, data: { confirm: 'Are you sure?'}, class: "btn btn-danger" %>
 <% end %>

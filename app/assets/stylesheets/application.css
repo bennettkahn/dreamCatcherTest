@@ -64,6 +64,14 @@
    position: fixed;
  }
 
+ .slow-grow {
+ }
+
+ .slow-grow:hover {
+   transform: scale(1.1);
+   transition: all 1s ease-out;    /* Gap */
+ }
+
  /* Animation for about description */
 #about-animation {
   animation-name: fade-in;
@@ -87,7 +95,7 @@
 
 /* Keeps footer fixed at bottom without needing to scroll all the way down */
 .footer {
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -183,6 +191,11 @@ border-color: #967BB6;
   background-color: #5A4181 !Important;
   border-color: #5A4181 !Important;
   color: whitesmoke;
+}
+
+.custom-btn:hover {
+  color: whitesmoke;
+  -webkit-filter: brightness(90%);
 }
 
 #search-btn {
