@@ -1,8 +1,8 @@
 # README
 
-###Project Website:
+##Project Website:
 https://dream-catcher-1.herokuapp.com/
-###Project Description:
+##Project Description:
 DreamCatcher is a website that allows users to keep a record of their dreams each night. They may also choose to post their dreams, either anonymously or named, and interact with other users' dreams. The goal of this project is to create an environment that encourages discussion of what dreams mean as well as how they may contain patterns over time.
 
 * Ruby version: 3.0.2
