@@ -64,6 +64,14 @@
    position: fixed;
  }
 
+ .slow-grow {
+ }
+
+ .slow-grow:hover {
+   transform: scale(1.1);
+   transition: all 1s ease-out;    /* Gap */
+ }
+
  /* Animation for about description */
 #about-animation {
   animation-name: fade-in;
