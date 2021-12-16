@@ -1,12 +1,4 @@
 
-<style>
-  .custom-btn {
-    background-color: #5A4181 !Important;
-    border-color: #5A4181 !Important;
-    color: whitesmoke;
-  }
-</style>
-
 <h1 class="label-font">My Dreams</h1>
 
 
@@ -28,7 +20,6 @@
 
 body{
   font-family: 'Nunito', sans-serif;
-  padding: 5px;
 }
 .card{
   border-radius: 4px;
@@ -56,7 +47,6 @@ body{
 
 .card h5 {
   padding-top: -10px;
-  
   font-size: 20px;
 }
 
@@ -101,30 +91,30 @@ a.fill-div {
 
 <div class="myclass">
 
-<div class="container">
-<%= month_calendar(attribute: :created_at, events: @entries) do |date, entries| %>
-  <div class="calendarCell">
-    <div class="dateText">
-      <h5 class="dateHeader">  <strong><%= date %> </strong></h5>
-    </div>
-   
-  
-    <% counter = 0 %>
-    <% entries.each do |entry| %>
-      <% if entry.user == current_user && counter < 4%>
-        <div class="housecard">
-          <div class="card">
+  <div class="container">
+  <%= month_calendar(attribute: :created_at, events: @entries) do |date, entries| %>
+    <div class="calendarCell">
+      <div class="dateText">
+        <h5 class="dateHeader">  <strong><%= date %> </strong></h5>
+      </div>
+     
+    
+      <% counter = 0 %>
+      <% entries.each do |entry| %>
+        <% if entry.user == current_user && counter < 4%>
+          <div class="housecard">
+            <div class="card">
 
-              <h5> <%= entry.title[0, 15] %>      <%= link_to image_tag('eye.png', alt: "View Dream"), entry %>  </h5>
-            
+                <h5> <%= entry.title[0, 15] %>      <%= link_to image_tag('eye.png', alt: "View Dream"), entry %>  </h5>
+              
+            </div>
           </div>
-        </div>
+        <% end %>
+        <% counter += 1 %>
       <% end %>
-      <% counter += 1 %>
-    <% end %>
-  </div>
-<% end %>
+    </div>
+  <% end %>
 
-</div>
+  </div>
 
 </div>

@@ -58,8 +58,10 @@
   <div class="actions form-group">
     <% if request.path != "/entries/new" %>
       <%= link_to 'Back', entries_path, class:"btn btn-secondary" %> |
+      <%= form.submit "Update Dream", class:"btn custom-btn"%>
+    <% else %>
+      <%= form.submit "Create Dream", class:"btn custom-btn"%>
     <% end %>
-    <%= form.submit "Create Dream", class:"btn custom-btn"%>
   </div>
 <% end %>
 

@@ -156,3 +156,82 @@ table tr:last-child td:last-child {
     line-height: 1.75;
     padding: 16px 16px 16px 16px;
 }
+
+.nav-color {
+  color: white;
+}
+
+.btn-header
+{
+background-color: none;
+color:#967BB6;
+border-color: #967BB6;
+}
+
+.btn-header.outline {
+  border: 2px solid #967BB6;
+  color: #967BB6;
+}
+
+.btn-header:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
+background-color: #967BB6;
+color:#FFF;
+border-color: #967BB6;
+}
+
+.custom-btn {
+  background-color: #5A4181 !Important;
+  border-color: #5A4181 !Important;
+  color: whitesmoke;
+}
+
+#search-btn {
+  border-color: #5A4181 !Important;
+}
+
+#header-main{
+  padding-right: 15px !Important;
+  padding-left: 15px !Important;
+  margin-right: 0px !Important;
+  margin-left: 0px !Important;
+  border-right: 0px !Important;
+  border-left: 0px !Important;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !Important;
+}
+
+/* PAGINATION */
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #5A4181;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #5A4181 !Important;
+    border: solid 1px #5A4181 !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #5A4181 !Important;
+    border: solid 1px #5A4181;
+}
+
+.page-item.active .page-link {
+  color: #fff !important;
+  background: #5A4181 !important;
+  border: solid 1px #5A4181;
+}

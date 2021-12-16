@@ -1,29 +1,20 @@
 <style>
-  .nav-color {
-    color: white;
-  }
+#search-btn {
+  border-color: #5A4181 !Important;
+}
 
-  .btn-default
-  {
-  background-color: none;
-  color:#967BB6;
-  border-color: #967BB6;
-  }
-
-  .btn-primary.outline {
-    border: 2px solid #967BB6;
-    color: #967BB6;
-  }
-
-  .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-  background-color: #967BB6;
-  color:#FFF;
-  border-color: #967BB6;
-  }
-  
+#header-main{
+  padding-right: 15px !Important;
+  padding-left: 15px !Important;
+  margin-right: 0px !Important;
+  margin-left: 0px !Important;
+  border-right: 0px !Important;
+  border-left: 0px !Important;
+  background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity)) !Important;
+}
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top header">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top header" id="header-main">
   <div class="container-fluid">
 
     <!-- Customized size of logo button... -->
@@ -82,8 +73,8 @@
       <% end %>
 
       <form class="d-flex" action="/search">
-        <input class="form-control me-2" name="q" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-default" type="submit">Search</button>
+        <input class="form-control me-2" name="q" type="search" placeholder="Find a Dream..." aria-label="Search">
+        <button class="btn btn-header" id="search-btn" type="submit">Search</button>
       </form>
     </div>
   </div>
